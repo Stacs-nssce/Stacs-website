@@ -1,6 +1,5 @@
 # Download these plugins for ease of working
 
-- [jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
 - [prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 ## Clone this repo and so the following
