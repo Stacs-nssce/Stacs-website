@@ -1,13 +1,10 @@
 [
   {
+    "Editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false,
-
-    // Controls if format on save formats the whole file or only modifications. Only applies when `editor.formatOnSave` is enabled.
-    //  - file: Format the whole file.
-    //  - modifications: Format modifications (requires source control).
-    //  - modificationsIfAvailable: Will attempt to format modifications only (requires source control). If source control can't be used, then the whole file will be formatted.
-    "editor.formatOnSaveMode": "file"
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
   },
   {
     // Include parentheses around a sole arrow function parameter
