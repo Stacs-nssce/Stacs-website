@@ -11,9 +11,16 @@
 
 if it doesn't contact a maintainer and tell them about this issue.
 
+- install all packages
+
+```sh
+    npm i --include-dev
+```
+
 - do the following command when doing the first push
 
 ```sh
+    git checkout -b your-username
     git remote add origin https://github.com///tree/your-branch-name
 ```
 
@@ -22,7 +29,6 @@ if it doesn't contact a maintainer and tell them about this issue.
 ```
 
 ```sh
-    git checkout -b your-username
     git add .
     git commit -m "initial push"
 ```
