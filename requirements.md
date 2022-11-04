@@ -7,7 +7,7 @@
 
 - check if there is a branch with your group/name in the repo
 
-  ![image showing how to chekc if branch exists]("")
+  ![image showing how to chekc if branch exists]("https://i.imgur.com/GPVDNoC.gif")
   if it doesn't contact a maintainer and tell them about this issue.
 
 - do the following command when doing the first push
