@@ -43,6 +43,6 @@
     "prettier": "2.7.1"
   },
   "lint-staged": {
-    "**/*": "prettier --write ./src --ignore-unknown"
+    "**/*": "prettier --write ./src"
   }
 }
