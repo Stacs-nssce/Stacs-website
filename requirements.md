@@ -13,7 +13,7 @@ if it doesn't contact a maintainer and tell them about this issue.
 - install all packages
 
 ```sh
-    npm i --include-dev
+    npm i --include=dev
 ```
 
 - do the following command when doing the first push
