@@ -18,7 +18,8 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "format": "npx prettier --write ./src",
-    "add": "npm run format && git add ."
+    "add": "npm run format && git add .",
+    "format:check": "npx prettier --check ./src"
   },
   "eslintConfig": {
     "extends": [
