@@ -58,7 +58,7 @@ don't forget to make a pull request after pushing the new changes
 [Click me to fork this repo](https://github.com/Stacs-nssce/Stacs-website/fork)
 
 - Create a new branch in your forked repo
-![image showing how to cerate a branch onl github](./markdown-assets/create-new-branch.gif)
+![image showing how to cerate a branch onl github](./markdown-assets/new.gif)
 
 - Then do the follwoing steps locally
 
@@ -78,4 +78,4 @@ Go to a folder of your choice and do the following
 - Create a pull request
 [click to go to the pull request menu](https://github.com/Stacs-nssce/Stacs-website/pulls)
 
-![image showing how to create a pull request](./markdown-assets/create-new-branch.gif)
+![image showing how to create a pull request](./markdown-assets/PR.gif)
