@@ -28,7 +28,7 @@ if it doesn't contact a maintainer and tell them about this issue.
 ```
 
 ```sh
-    git add .
+    npm run add
     git commit -m "initial push"
 ```
 
