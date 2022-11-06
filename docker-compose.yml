@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  site:
+    build: .
+    ports:
+      - 3000:3000
+    expose:
+      - 3000
+    volumes:
+      - .:/app
