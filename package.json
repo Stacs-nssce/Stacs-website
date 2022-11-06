@@ -17,7 +17,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "format": "npx prettier --write ./src"
+    "format": "npx prettier --write ./src",
+    "add": "npm run format && git add .",
+    "format:check": "npx prettier --check ./src"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +45,6 @@
     "prettier": "2.7.1"
   },
   "lint-staged": {
-    "**/*": "prettier --write ./src --ignore-unknown"
+    "src/**": "prettier --write ./src"
   }
 }

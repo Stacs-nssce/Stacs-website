@@ -1,3 +1,119 @@
-{
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
-}
+[
+  {
+    "Editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+  },
+  {
+    // Include parentheses around a sole arrow function parameter
+    "prettier.arrowParens": "always",
+
+    // If true, puts the `>` of a multi-line HTML (HTML, JSX, Vue, Angular) element at the end of the last line instead of being alone on the next line (does not apply to self closing elements).
+    "prettier.bracketSameLine": false,
+
+    // Controls the printing of spaces inside object literals
+    "prettier.bracketSpacing": true,
+
+    // Path to the prettier configuration file
+    "prettier.configPath": "",
+
+    // This feature is no longer supported. Instead, configure VS Code [default formatters](https://github.com/prettier/prettier-vscode#default-formatter) or use .prettierignore.
+    // A list of languages IDs to disable this extension on
+    "prettier.disableLanguages": [],
+
+    // A list of [glob patterns](https://code.visualstudio.com/api/references/vscode-api#GlobPattern) to register Prettier formatter
+    "prettier.documentSelectors": [],
+
+    // Control whether Prettier formats quoted code embedded in the file.
+    "prettier.embeddedLanguageFormatting": "auto",
+
+    // Controls whether prettier is enabled or not.
+    "prettier.enable": true,
+
+    // Enable debug logs for troubleshooting.
+    "prettier.enableDebugLogs": false,
+
+    // Specify the end of line used by prettier
+    "prettier.endOfLine": "lf",
+
+    // Specify the global whitespace sensitivity for HTML files.
+    //  Valid options:
+    // - `css` - Respect the default value of CSS display property.
+    // - `strict` - Whitespaces are considered sensitive.
+    // - `ignore` - Whitespaces are considered insensitive.
+    "prettier.htmlWhitespaceSensitivity": "css",
+
+    // Path to a .prettierignore file
+    "prettier.ignorePath": ".prettierignore",
+
+    // Prettier can insert a special @format marker at the top of files specifying that the file has been formatted with prettier. This works well when used in tandem with the `--require-pragma` option. If there is already a docblock at the top of the file then this option will add a newline to it with the @format marker.
+    "prettier.insertPragma": false,
+
+    // This option has been deprecated in v2.4.0, use `bracketSameLine` instead.
+    // If true, puts the `>` of a multi-line jsx element at the end of the last line instead of being alone on the next line (does not apply to self closing elements).
+    "prettier.jsxBracketSameLine": false,
+
+    // Use single quotes instead of double quotes in JSX
+    "prettier.jsxSingleQuote": false,
+
+    // Package manager is now automatically detected by VS Code. This setting is no longer used.
+    // The package manager you use to install node modules.
+    "prettier.packageManager": "npm",
+
+    // Path to the prettier module
+    "prettier.prettierPath": "",
+
+    // Fit code within this line limit
+    "prettier.printWidth": 80,
+
+    // (Markdown) wrap prose over multiple lines
+    "prettier.proseWrap": "preserve",
+
+    // Change when properties in objects are quoted
+    "prettier.quoteProps": "as-needed",
+
+    // Require a prettier configuration file to format. See [documentation for valid configuration files](https://prettier.io/docs/en/configuration.html).
+    //
+    // > _Note, untitled files will still be formatted using the VS Code prettier settings even when this setting is set._
+    "prettier.requireConfig": false,
+
+    // Prettier can restrict itself to only format files that contain a special comment, called a pragma, at the top of the file. This is very useful when gradually transitioning large, unformatted codebases to prettier.
+    "prettier.requirePragma": false,
+
+    // When enabled, this extension will attempt to use global npm or yarn modules if local modules cannot be resolved.
+    // > _This setting can have a negative performance impact, particularly on Windows when you have attached network drives. Only enable this if you must use global modules._
+    "prettier.resolveGlobalModules": false,
+
+    // Whether to add a semicolon at the end of every line
+    "prettier.semi": true,
+
+    // If true, enforces single attribute per line in HTML, Vue and JSX.
+    "prettier.singleAttributePerLine": false,
+
+    // If true, will use single instead of double quotes
+    "prettier.singleQuote": false,
+
+    // Number of spaces it should use per tab
+    "prettier.tabWidth": 2,
+
+    // Controls the printing of trailing commas wherever possible. Valid options:
+    // - `none` - No trailing commas
+    // - `es5` - Trailing commas where valid in ES5 (objects, arrays, etc)
+    // - `all` - Trailing commas wherever possible (function arguments)
+    "prettier.trailingComma": "es5",
+
+    // Whether or not to take `.editorconfig` into account when parsing configuration. See the [prettier.resolveConfig](https://prettier.io/docs/en/api.html) docs for details.
+    "prettier.useEditorConfig": true,
+
+    // Indent lines with tabs
+    "prettier.useTabs": false,
+
+    // Whether or not to indent the code inside `<script>` and `<style>` tags in Vue files. Some people (like the creator of Vue) don’t indent to save an indentation level, but this might break code folding in your editor.
+    "prettier.vueIndentScriptAndStyle": false,
+
+    // If true, this extension will process files in node_modules
+    "prettier.withNodeModules": false
+  }
+]
