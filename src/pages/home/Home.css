@@ -1,0 +1,59 @@
+
+h1 {
+  margin: 0;
+  font-size: 3.125rem;  
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 200;
+}
+
+h5 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+
+p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.flex-container{
+  display: flex;
+  align-items: center;
+}
+
+.hero-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-title {
+  width: 33em;
+  padding-top: 5em;
+}
+
+.author {
+  text-align: right;
+}
+
+.hero-quote {
+  width: 24em;
+}
+
+.caption {
+  padding-top: 5em;
+}
+
+.department {
+  padding-top: 2em;
+}
+
+.hero-image {
+  padding-top: 6em;
+  width: 35.375em;
+}
+
+img {
+  min-width: 100%;
+}

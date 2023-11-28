@@ -1,0 +1,27 @@
+nav {
+    display: flex;
+    padding: 2em 7em 0em;
+    justify-content: space-between  ;
+    align-items: center;
+}
+  
+img {
+    width: 13em;
+}
+  
+.nav-links {
+    display: flex;
+    align-items: center;
+
+}
+
+a {
+    padding: 0 1.5em;
+    text-decoration: none;
+    font-family: 'inter';
+    color: black;
+}
+
+.active{
+    font-weight: bolder;
+}
