@@ -1,7 +1,5 @@
-import './commitee.css'
+import "./commitee.css";
 
-export default function Commitee (){
-    return (
-        <div>commitee</div>
-    )
+export default function Commitee() {
+    return <div>commitee</div>;
 }

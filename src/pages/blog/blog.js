@@ -1,7 +1,5 @@
-import './blog.css'
+import "./blog.css";
 
-export default function Blog (){
-    return (
-        <div>blog</div>
-    )
+export default function Blog() {
+    return <div>blog</div>;
 }

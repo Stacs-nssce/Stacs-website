@@ -1,7 +1,5 @@
-import './activities.css'
+import "./activities.css";
 
-export default function Activities (){
-    return (
-        <div>Activities</div>
-    )
+export default function Activities() {
+    return <div>Activities</div>;
 }

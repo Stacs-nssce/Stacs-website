@@ -1,7 +1,5 @@
-import './faculties.css'
+import "./faculties.css";
 
-export default function Faculties (){
-    return (
-        <div>Faculties</div>
-    )
+export default function Faculties() {
+    return <div>Faculties</div>;
 }

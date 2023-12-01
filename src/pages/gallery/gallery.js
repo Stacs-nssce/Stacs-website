@@ -1,7 +1,5 @@
-import './gallery.css'
+import "./gallery.css";
 
-export default function Gallery (){
-    return (
-        <div>gallery</div>
-    )
+export default function Gallery() {
+    return <div>gallery</div>;
 }
