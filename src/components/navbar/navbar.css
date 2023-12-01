@@ -1,27 +1,27 @@
 nav {
+    border-top: 8px solid #000;
     display: flex;
     padding: 2em 7em 0em;
-    justify-content: space-between  ;
+    justify-content: space-between;
     align-items: center;
 }
-  
+
 img {
     width: 13em;
 }
-  
+
 .nav-links {
     display: flex;
     align-items: center;
-
 }
 
 a {
     padding: 0 1.5em;
     text-decoration: none;
-    font-family: 'inter';
+    font-family: "inter";
     color: black;
 }
 
-.active{
+.active {
     font-weight: bolder;
 }
