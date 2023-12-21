@@ -1,0 +1,83 @@
+:root {
+    font-family: Jost;
+}
+.container {
+    height: 51rem;
+    overflow: hidden;
+}
+.faculties {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    border-top: 0.25rem solid #ffbf23;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+.faculty-title-container {
+    display: grid;
+    justify-content: right;
+    align-items: center;
+    width: 10rem;
+    grid-template-columns: 0fr 0fr;
+}
+.faculty-title {
+    padding-right: 2rem;
+    width: 2rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    overflow-wrap: break-word;
+}
+.side-boreder {
+    background-color: #acacac;
+    width: 0.25rem;
+    height: 30rem;
+}
+.faculty-mem {
+    display: grid;
+    padding-left: 5rem;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 19px;
+}
+.container-y {
+    display: grid;
+    grid-template-rows: 0fr 0fr 0fr;
+    justify-content: center;
+    width: 11.5rem;
+    height: 15rem;
+    border: 0.3rem solid #ffbf23;
+    background: linear-gradient(to top, #d9d9d9a6 70%, transparent 70%);
+    border-top-left-radius: 1.5rem;
+}
+.container-b {
+    display: grid;
+    grid-template-rows: 0fr 0fr 0fr;
+    justify-content: center;
+    width: 11.5rem;
+    height: 15rem;
+    border: 0.3rem solid black;
+    background: linear-gradient(to top, #d9d9d9a6 70%, transparent 70%);
+    border-top-left-radius: 1.5rem;
+}
+.mem-img {
+    width: 6rem;
+    height: 6rem;
+    border: 0.14rem solid #7f808094;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 3rem;
+}
+.mem-name {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.mem-position {
+    font-size: 0.7rem;
+    color: #ffbf23;
+}
+.bottom-bar {
+    position: relative;
+    bottom: -3rem;
+    height: 600px;
+    background-color: #ffbf23;
+    transform: skewY(-4deg);
+}
