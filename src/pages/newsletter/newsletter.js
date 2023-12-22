@@ -11,7 +11,7 @@ export default function Newsletter() {
                 <div className="faculty-mem"></div>
             </div>
             <div className="bottom-bar">
-                <img src="./img/image-21.svg" />
+                <img src="./img/image-21.jpg" />
             </div>
         </div>
     );
