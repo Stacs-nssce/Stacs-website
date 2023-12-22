@@ -52,8 +52,12 @@ export default function Faculties() {
                 </div>
             </div>
             <div className="bottom-bar">
-                <img className="bottom-bar-bg" src="./img/bottom-bar.png" />
-                <img src="./img/image21.png" />
+                <img
+                    className="bottom-bar-bg"
+                    src="./img/bottom-bar.png"
+                    alt="bottom-bar"
+                />
+                <img src="./img/image21.png" alt="image21" />
             </div>
         </div>
     );

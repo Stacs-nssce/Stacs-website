@@ -12,19 +12,17 @@ export default function Navbar() {
     return (
         <>
             <nav>
-                <div className="logo flex-container">
-                    <Link className="home" to="/">
-                        <img src="./img/logo.svg" alt="stacs logo" />
-                    </Link>
-                </div>
-                <div
+                <Link className="home" to="/">
+                    <img src="./img/logo.svg" alt="stacs logo" />
+                </Link>
+                {/* <div
                     className={`menu ${mobileMenuOpen ? "open" : ""}`}
                     onClick={toggleMobileMenu}
                 >
                     <div className="bar"></div>
                     <div className="bar"></div>
                     <div className="bar"></div>
-                </div>
+                </div> */}
                 <ul className={`nav-links ${mobileMenuOpen ? "open" : ""}`}>
                     <NavLink to="/Faculties" onClick={toggleMobileMenu}>
                         Faculties
@@ -49,7 +47,7 @@ export default function Navbar() {
                     </NavLink>
                 </ul>
             </nav>
-            <div className={`mobile-nav ${mobileMenuOpen ? "open" : ""}`}>
+            {/* <div className={`mobile-nav ${mobileMenuOpen ? "open" : ""}`}>
                 <NavLink to="/Faculties" onClick={toggleMobileMenu}>
                     Faculties
                 </NavLink>
@@ -71,7 +69,7 @@ export default function Navbar() {
                 <NavLink to="/Commitee" onClick={toggleMobileMenu}>
                     Commitee
                 </NavLink>
-            </div>
+            </div> */}
         </>
     );
 }

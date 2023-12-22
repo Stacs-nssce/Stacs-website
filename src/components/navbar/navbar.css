@@ -1,10 +1,70 @@
-nav {
+/* nav {
     display: flex;
     padding: 2em 7em 1em;
     justify-content: space-between;
     align-items: center;
+} */
+
+nav {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 0 1% 0;
+    /* Safari/Chrome, other WebKit */
+    -webkit-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    -moz-box-sizing: border-box;
+    /* Opera/IE 8+ */
+    box-sizing: border-box;
+    border-bottom: 2px solid #ffbf23;
+
+    img {
+        width: 20%;
+    }
+
+    .nav-links {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: "inter";
+        }
+    }
 }
 
+@media screen and (max-width: 767px) {
+    nav {
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+        padding: 2% 0 2% 1vw;
+        /* Safari/Chrome, other WebKit */
+        -webkit-box-sizing: border-box;
+        /* Firefox, other Gecko */
+        -moz-box-sizing: border-box;
+        /* Opera/IE 8+ */
+        box-sizing: border-box;
+        border-bottom: 2px solid #ffbf23;
+
+        img {
+            width: 50vw;
+        }
+
+        .nav-links {
+            display: none;
+
+            a {
+            }
+        }
+    }
+}
+
+/* 
 img {
     width: 13em;
 }
@@ -24,23 +84,28 @@ a {
 .active {
     font-weight: bolder;
 }
+
 .mobile-nav {
     display: none;
 }
+
 .menu {
     display: none;
 }
 
-/* @media (max-width: 400px) {
+@media (max-width: 400px) {
     nav {
         padding: 1em 0;
     }
+
     .nav-links {
         display: none;
     }
+
     img {
         width: 12em;
     }
+
     .mobile-nav {
         border-top: 0.25rem solid #ffbf23;
         display: grid;
@@ -50,15 +115,14 @@ a {
         font-size: 1.2rem;
         justify-items: center;
     }
+
     .menu {
         display: block;
         padding: 0 3rem;
         width: 2rem;
         height: 2rem;
     }
-} */
-
-/* Your existing styles */
+}
 
 .menu {
     display: none;
@@ -73,7 +137,6 @@ a {
 }
 
 @media (max-width: 400px) {
-    /* Your existing mobile styles */
     .menu {
         display: block;
         padding: 0 1.5rem;
@@ -87,7 +150,7 @@ a {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 80px; /* Adjust this value as needed */
+        top: 80px;
         left: 0;
         width: 100%;
         background-color: #fff;
@@ -101,6 +164,4 @@ a {
         color: #333;
         text-decoration: none;
     }
-}
-
-/* Your existing styles */
+} */
