@@ -1,0 +1,29 @@
+:root {
+    font-family: Jost;
+}
+.newsletter {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    border-top: 0.25rem solid #ffbf23;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+.newsletter-title-container {
+    display: grid;
+    justify-content: right;
+    align-items: center;
+    width: 10rem;
+    grid-template-columns: 0fr 0fr;
+}
+.newsletter-title {
+    padding-right: 2rem;
+    width: 3rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    overflow-wrap: break-word;
+}
+.side-boreder {
+    background-color: #acacac;
+    width: 0.25rem;
+    height: 30rem;
+}

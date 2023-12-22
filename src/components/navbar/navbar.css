@@ -1,7 +1,6 @@
 nav {
-    border-top: 8px solid #000;
     display: flex;
-    padding: 2em 7em 0em;
+    padding: 2em 7em 1em;
     justify-content: space-between;
     align-items: center;
 }
@@ -24,4 +23,37 @@ a {
 
 .active {
     font-weight: bolder;
+}
+.mobile-nav {
+    display: none;
+}
+.menu {
+    display: none;
+}
+
+@media (max-width: 400px) {
+    nav {
+        padding: 1em 0;
+    }
+    .nav-links {
+        display: none;
+    }
+    img {
+        width: 12em;
+    }
+    .mobile-nav {
+        border-top: 0.25rem solid #ffbf23;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+        font-size: 1.2rem;
+        justify-items: center;
+    }
+    .menu {
+        display: block;
+        padding: 0 3rem;
+        width: 2rem;
+        height: 2rem;
+    }
 }
