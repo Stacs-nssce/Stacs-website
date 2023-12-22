@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Please Check before starting
 
+Please follow the css conventions as in [here](./src/pages/home/Home.css)
+
 [view file](./requirements.md)
 
 ## Available Scripts

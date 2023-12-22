@@ -1,58 +1,81 @@
-h1 {
-    margin: 0;
-    font-size: 3.125rem;
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 200;
-}
-
-h5 {
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: 400;
-    font-family: "Inter", sans-serif;
-}
-
-p {
-    margin: 0;
-    font-size: 0.875rem;
-}
-
-.flex-container {
-    display: flex;
-    align-items: center;
-}
-
-.hero-wrap {
+.wrapper-holder {
     display: flex;
     justify-content: center;
+
+    h1 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 2.5vw;
+    }
+
+    h5 {
+        font-family: "Inter", sans-serif;
+        font-size: 1.3vw;
+    }
+
+    .wrapper {
+        display: flex;
+        padding-top: 5vh;
+        width: 80%;
+
+        .text-holder {
+            display: flex;
+            flex-direction: column;
+            margin-right: 5vw;
+            width: 40%;
+
+            .info {
+                margin-bottom: 20vh;
+
+                h1 {
+                    padding-bottom: 5vh;
+                }
+            }
+
+            .quote {
+                margin-top: 20vh;
+
+                .quoter {
+                    display: flex;
+                    padding-top: 2.5vh;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
 }
 
-.hero-title {
-    width: 33em;
-    padding-top: 4em;
-}
+@media screen and (max-width: 767px) {
+    .wrapper-holder {
+        display: flex;
+        justify-content: center;
 
-.author {
-    text-align: right;
-}
+        h1 {
+            font-size: 10vw;
+        }
 
-.hero-quote {
-    width: 24em;
-}
+        h5 {
+            font-size: 5vw;
+        }
 
-.caption {
-    padding-top: 5em;
-}
+        .wrapper {
+            .text-holder {
+                width: 90%;
 
-.department {
-    padding-top: 2em;
-}
+                .info {
+                    /* height: 70vh; */
+                    margin-bottom: 5vh;
+                }
 
-.hero-image {
-    padding-top: 5em;
-    width: 35.375em;
-}
+                .quote {
+                    /* height: 70vh; */
+                    /* padding-top: 0; */
+                    margin: 0;
+                }
+            }
+        }
 
-img {
-    min-width: 100%;
+        img {
+            display: none;
+        }
+    }
 }
