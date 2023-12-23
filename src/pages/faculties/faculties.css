@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: 0fr 1fr;
     padding-top: 1.5rem;
+    gap: 5rem;
     text-align: center;
 }
 
@@ -33,7 +34,6 @@
 
 .faculty-mem {
     display: grid;
-    padding-left: 5rem;
     gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
     margin: 19px;
@@ -101,6 +101,7 @@
 @media (max-width: 767px) {
     .faculties {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .faculty-title {
@@ -123,7 +124,6 @@
 
     .faculty-mem {
         grid-template-columns: repeat(2, 1fr);
-        padding: 0;
         justify-items: center;
     }
 }
