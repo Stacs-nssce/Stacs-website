@@ -1,10 +1,9 @@
 nav {
     .linksholder {
         display: flex;
-        width: 100vw;
-        justify-content: space-around;
+        width: 100%;
+        justify-content: space-between;
         align-items: center;
-        padding: 1% 0 1% 0;
         /* Safari/Chrome, other WebKit */
         -webkit-box-sizing: border-box;
         /* Firefox, other Gecko */
@@ -12,12 +11,14 @@ nav {
         /* Opera/IE 8+ */
         box-sizing: border-box;
         border-bottom: 2px solid #ffbf23;
+        padding: 0.75rem 3rem;
 
         .nav-links {
             width: 50%;
             display: flex;
-            align-items: center;
-            justify-content: space-evenly;
+            gap: 2rem;
+            justify-content: right;
+            font-size: x-large;
 
             a {
                 text-decoration: none;
@@ -25,6 +26,10 @@ nav {
                 font-family: "inter";
             }
         }
+    }
+
+    .active {
+        font-weight: 600;
     }
 
     .Hamburg {
@@ -39,28 +44,39 @@ nav {
 @media screen and (max-width: 767px) {
     nav {
         .linksholder {
-            justify-content: stretch;
             padding: 2% 0 2% 1vw;
             flex-direction: row;
-            justify-content: space-around;
+
+            .home img {
+                width: 13rem;
+                margin-left: 1rem;
+            }
 
             .nav-links {
                 display: none;
             }
-        }
 
-        .Hamburg {
-            display: block;
+            .Hamburg {
+                display: block;
+                margin-right: 1.5rem;
+            }
         }
 
         .m-nav-links {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            justify-items: center;
+            padding: 0;
+            position: absolute;
+            background-color: #ffffffee;
+            width: 100%;
+            border-bottom: 2px solid #ffbf23;
 
             a {
                 text-decoration: none;
                 color: black;
                 font-family: "inter";
+                font-size: small;
+                padding: 0.5rem;
             }
         }
     }
