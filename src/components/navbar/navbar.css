@@ -41,7 +41,8 @@ nav {
         .linksholder {
             justify-content: stretch;
             padding: 2% 0 2% 1vw;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: space-around;
 
             .nav-links {
                 display: none;
