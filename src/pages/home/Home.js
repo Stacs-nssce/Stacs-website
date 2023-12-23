@@ -19,7 +19,6 @@ export default function Home() {
                             <h5 className="quoter">- Andrew Carnegie</h5>
                         </div>
                     </div>
-
                     <img src="./img/g236.svg" alt="community" />
                 </div>
             </div>

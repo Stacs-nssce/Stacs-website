@@ -24,9 +24,8 @@ export default function Navbar() {
                     <NavLink to="/Blog">Blog</NavLink>
                     <NavLink to="/Commitee">Commitee</NavLink>
                 </ul>
-
                 <div className="Hamburg" onClick={toggleMobileMenu}>
-                    E
+                    <img src="./img/menu.png" />
                 </div>
             </div>
             {mobileMenuOpen ? (

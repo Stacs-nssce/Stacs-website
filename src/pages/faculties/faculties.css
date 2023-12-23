@@ -5,7 +5,6 @@
 .faculties {
     display: grid;
     grid-template-columns: 0fr 1fr;
-    border-top: 0.25rem solid #ffbf23;
     padding-top: 1.5rem;
     text-align: center;
 }
@@ -99,7 +98,7 @@
     width: 100%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 767px) {
     .faculties {
         grid-template-columns: 1fr;
     }
@@ -107,7 +106,7 @@
     .faculty-title {
         overflow-wrap: normal;
         width: auto;
-        padding: 0;
+        padding: 0 0 1rem 0;
     }
 
     .faculty-title-container {
