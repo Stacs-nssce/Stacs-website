@@ -1,0 +1,12 @@
+.footer {
+    display: grid;
+    height: 19rem;
+    background-size: cover;
+    background-image: url("../../../public/img/footer.png");
+
+    img {
+        justify-self: right;
+        align-self: flex-end;
+        width: 10rem;
+    }
+}
