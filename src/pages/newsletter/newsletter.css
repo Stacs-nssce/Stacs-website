@@ -1,29 +1,91 @@
 :root {
     font-family: Jost;
 }
+
 .newsletter {
     display: grid;
     grid-template-columns: 0fr 1fr;
-    border-top: 0.25rem solid #ffbf23;
     padding-top: 1.5rem;
     text-align: center;
+
+    .title {
+        display: grid;
+        justify-content: right;
+        align-items: center;
+        width: 10rem;
+        grid-template-columns: 0fr 0fr;
+
+        span {
+            padding-right: 2rem;
+            width: 3rem;
+            font-size: 3rem;
+            line-height: 3rem;
+            overflow-wrap: break-word;
+        }
+
+        .side-boreder {
+            background-color: #acacac;
+            width: 0.25rem;
+            height: 30rem;
+        }
+    }
+
+    .content {
+        border-color: #00000099;
+        border-radius: 2rem;
+        border-style: solid;
+        margin: 0 5rem;
+        border-width: 0.75rem 1rem 0.75rem 0.25rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        padding: 2rem;
+
+        a:nth-child(even) {
+            background-color: #d9d9d9;
+            width: 90%;
+            aspect-ratio: 1;
+            margin: 3rem 2rem 1rem;
+        }
+
+        a:nth-child(odd) {
+            background-color: #d9d9d9;
+            width: 90%;
+            aspect-ratio: 1;
+            margin: 1rem 2rem 3rem;
+        }
+    }
 }
-.newsletter-title-container {
-    display: grid;
-    justify-content: right;
-    align-items: center;
-    width: 10rem;
-    grid-template-columns: 0fr 0fr;
-}
-.newsletter-title {
-    padding-right: 2rem;
-    width: 3rem;
-    font-size: 3rem;
-    line-height: 3rem;
-    overflow-wrap: break-word;
-}
-.side-boreder {
-    background-color: #acacac;
-    width: 0.25rem;
-    height: 30rem;
+
+@media (max-width: 767px) {
+    .newsletter {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 1rem;
+
+        .title {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            width: 100%;
+
+            span {
+                width: 18.7rem;
+                padding: 0;
+                padding: 0 0 1rem 0;
+            }
+
+            .side-boreder {
+                height: 0.25rem;
+                width: 30rem;
+            }
+        }
+
+        .content {
+            grid-template-columns: 1fr 1fr;
+            width: 85%;
+            padding: 0.5rem;
+            border-width: 0.75rem 0.25rem 0.75rem 0.25rem;
+            margin-top: 1.5rem;
+        }
+    }
 }

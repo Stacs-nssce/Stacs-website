@@ -1,14 +1,20 @@
+import { Link } from "react-router-dom";
 import "./newsletter.css";
 
 export default function Newsletter() {
     return (
-        <div className="container">
-            <div className="newsletter">
-                <div className="newsletter-title-container">
-                    <span className="newsletter-title">NEWSLETTER</span>
-                    <div className="side-boreder"></div>
-                </div>
-                <div className="faculty-mem"></div>
+        <div className="newsletter">
+            <div className="title">
+                <span>NEWSLETTER</span>
+                <div className="side-boreder"></div>
+            </div>
+            <div className="content">
+                <Link to="/Newsletter/A"></Link>
+                <Link to="/Newsletter/B"></Link>
+                <Link to="/Newsletter/C"></Link>
+                <Link to="/Newsletter/D"></Link>
+                <Link to="/Newsletter/E"></Link>
+                <Link to="/Newsletter/F"></Link>
             </div>
             <div className="bottom-bar">
                 <img src="./img/image-21.jpg" />

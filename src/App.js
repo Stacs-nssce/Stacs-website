@@ -1,6 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/navbar";
+import Footer from "./components/footer/footer";
 import Home from "./pages/home/Home";
 import Faculties from "./pages/faculties/faculties";
 import Activities from "./pages/activities/activities";
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/Blog" element={<Blog />}></Route>
                 <Route path="/Commitee" element={<Commitee />}></Route>
             </Routes>
+            <Footer />
         </>
     );
 }

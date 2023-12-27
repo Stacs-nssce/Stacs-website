@@ -6,12 +6,6 @@
     margin: 0;
 }
 
-@media (max-width: 767px) {
-    :root {
-        font-size: 10px;
-    }
-}
-
 @media (max-width: 1439px) {
     :root {
         font-size: 14px;
@@ -20,6 +14,13 @@
 
 @media (max-width: 1057px) {
     :root {
-        font-size: 9px;
+        font-size: 10px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    :root {
+        font-size: 10px;
     }
 }

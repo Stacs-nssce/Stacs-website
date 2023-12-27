@@ -21,7 +21,6 @@
         display: flex;
         justify-content: left;
         width: 70rem;
-        height: 38rem;
 
         .text-holder {
             display: flex;
