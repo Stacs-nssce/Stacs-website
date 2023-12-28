@@ -13,7 +13,7 @@ nav {
         border-bottom: 2px solid #ffbf23;
         padding: 0.75rem 3rem;
 
-        .home img {
+        .homeLink img {
             width: 13.5rem;
         }
 
@@ -21,12 +21,12 @@ nav {
             width: 50%;
             display: flex;
             margin-right: 3rem;
-            gap: 2rem;
+            gap: 2.5rem;
             justify-content: right;
             font-size: x-large;
 
             a {
-                font-size: 1.3rem;
+                font-size: 1.1rem;
                 text-decoration: none;
                 color: black;
                 font-family: "inter";
@@ -53,7 +53,7 @@ nav {
             padding: 2% 0 2% 1vw;
             flex-direction: row;
 
-            .home img {
+            .homeLink img {
                 width: 13rem;
                 margin-left: 1rem;
             }

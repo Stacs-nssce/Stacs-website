@@ -16,9 +16,6 @@ export default function Newsletter() {
                 <Link to="/Newsletter/E"></Link>
                 <Link to="/Newsletter/F"></Link>
             </div>
-            <div className="bottom-bar">
-                <img src="./img/image-21.jpg" />
-            </div>
         </div>
     );
 }

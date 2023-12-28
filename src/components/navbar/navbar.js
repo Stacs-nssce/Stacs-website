@@ -12,7 +12,7 @@ export default function Navbar() {
     return (
         <nav>
             <div className="linksholder">
-                <Link className="home" to="/">
+                <Link className="homeLink" to="/">
                     <img src="./img/logo.svg" alt="stacs logo" />
                 </Link>
                 <ul className="nav-links">
