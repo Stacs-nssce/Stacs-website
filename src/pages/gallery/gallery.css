@@ -1,0 +1,30 @@
+.gallery {
+    border: 0.1rem solid black;
+    height: fit-content;
+    margin: 1rem;
+
+    .events {
+        background-color: aqua;
+        height: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .images {
+        column-count: 5;
+        margin: 0.5rem;
+        gap: 0.5rem;
+        width: 99%;
+        height: 50rem;
+        overflow-y: scroll;
+
+        div {
+            img {
+                border-radius: 0.5rem;
+                border: 1px solid lightgray;
+                width: 100%;
+            }
+        }
+    }
+}
