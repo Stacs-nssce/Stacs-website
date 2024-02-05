@@ -1,6 +1,6 @@
 /*all styles in here, except whatever has to be inline.*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,15 +8,15 @@
 
 /* HEADER STYLING BEGINS HERE */
 .nav-center {
-   margin:auto;
-   text-align: center;
-   margin-bottom: 20px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .nav-content {
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     line-height: 1.5em;
 }
 
@@ -25,7 +25,7 @@
     font-weight: 500;
     font-size: 36px;
     line-height: 43px;
-    color: #433C3C;
+    color: #433c3c;
     margin-bottom: 5px;
 }
 
@@ -35,7 +35,7 @@
     font-weight: 500;
     font-size: 15px;
     color: rgba(67, 60, 60, 0.9);
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-content a:hover {
@@ -46,15 +46,13 @@
 /* HEADER STYLING END HERE */
 
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
 }
 
 .container {
     width: 100%;
     padding: 50px 5% 0 5%;
 }
-
-
 
 /*section*/
 .section {
@@ -65,11 +63,10 @@ body {
     grid-gap: 2rem;
     justify-content: center;
     text-align: center;
-    margin: 6rem auto ;
+    margin: 6rem auto;
 }
 
 /*footer*/
-
 
 .footer h3 {
     font-weight: 400;
@@ -86,38 +83,37 @@ body {
     font-weight: 500;
     color: #ffffffba;
     text-decoration: none;
-
 }
 
 .footer a:hover {
     text-decoration: underline;
     color: #ffffff;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.card{
+.card {
     display: inline-block;
     place-self: center;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     width: 300px;
     padding: 10px;
     margin: 0 20px 100px 20px;
     border-radius: 5px;
     text-align: center;
-    background-color: #FCFAF8;
+    background-color: #fcfaf8;
     border-bottom: 10px solid #ff8c00;
-    transition: all .3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
-.card:hover{
-    box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, .08);
+.card:hover {
+    box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.08);
 }
 
-.img{
+.img {
     width: 100%;
 }
 
-.info{
+.info {
     margin-top: 15px;
     margin-bottom: 30px;
 }
@@ -126,27 +122,27 @@ body {
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
-    color: #433C3C;
+    color: #433c3c;
 }
 
-.info p{
+.info p {
     font-size: 16px;
     line-height: 19px;
     margin-top: 5px;
     color: rgba(67, 60, 60, 0.7);
 }
 
-.social{
+.social {
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
 }
 
-.social a{
+.social a {
     margin: 10px;
 }
 
-.social img:hover{
+.social img:hover {
     background-color: #1d1102;
 }
 
@@ -165,12 +161,11 @@ body {
     .card {
         margin-bottom: 75px;
     }
-
 }
 
 @media (min-width: 1025px) {
     .section {
-         grid-template-columns: repeat(3, minmax(250px, 400px));
-         max-width: 1024px;
+        grid-template-columns: repeat(3, minmax(250px, 400px));
+        max-width: 1024px;
     }
 }

@@ -1,70 +1,48 @@
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./gallery.css";
 
-export default function Gallery() {
-    const Events = [{ name: "event1" }, { name: "event2" }];
+const GalleryPage = () => {
+    const [gallery, setGallery] = useState([]);
 
-    const Images = [
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-        { img: "1.jpeg" },
-    ];
+    useEffect(() => {
+        fetchData();
+    }, []);
+
+    const fetchData = async () => {
+        try {
+            const response = await axios.get(
+                "https://raw.githubusercontent.com/stacsnssce/webdata/master/gallery.json"
+            );
+            const sortedGallery = response.data.gallery.sort((a, b) =>
+                b.title.localeCompare(a.title)
+            ); // Sort gallery array in descending order by event title
+            setGallery(sortedGallery);
+        } catch (error) {
+            console.error("Error fetching data:", error);
+        }
+    };
 
     return (
-        <div className="gallery">
-            <div className="events">
-                {Events.map((events) => (
-                    <div>{events.name}</div>
-                ))}
-            </div>
-            <div className="images">
-                {Images.map((images) => (
-                    <div>
-                        <img src={require(`./images/${images.img}`)} />
+        <div className="container">
+            <h1 className="heading">Gallery</h1>
+            {gallery.map((ga, index) => (
+                <section key={index} className="event">
+                    <h2 className="event-title">{ga.title}</h2>
+                    <div className="images">
+                        {ga.images.map((im, imgIndex) => (
+                            <img
+                                key={imgIndex}
+                                src={im}
+                                alt={ga.title}
+                                className="img"
+                            />
+                        ))}
                     </div>
-                ))}
-            </div>
+                </section>
+            ))}
         </div>
     );
-}
+};
+
+export default GalleryPage;
