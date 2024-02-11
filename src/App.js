@@ -6,6 +6,7 @@ import Home from "./pages/home/Home";
 import Faculties from "./pages/faculties/faculties";
 import Activities from "./pages/activities/activities";
 import Awards from "./pages/awards/awards";
+import AwardDetails from "./pages/awards/awards";
 import Newsletter from "./pages/newsletter/newsletter";
 import Gallery from "./pages/gallery/gallery";
 import Blog from "./pages/blog/blog";
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/Faculties" element={<Faculties />}></Route>
                 <Route path="/Activities" element={<Activities />}></Route>
                 <Route path="/Awards" element={<Awards />}></Route>
+                <Route path="/awards-desc/:awardId" Component={AwardDetails} />
                 <Route path="/Newsletter" element={<Newsletter />}></Route>
                 <Route path="/Gallery" element={<Gallery />}></Route>
                 <Route path="/Blog" element={<Blog />}></Route>
