@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../../assets/logo.svg";
+
 
 export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,7 +15,7 @@ export default function Navbar() {
         <nav>
             <div className="linksholder">
                 <Link className="homeLink" to="/">
-                    <img src="./img/logo.svg" alt="stacs logo" />
+                    <img src={logo} alt="stacs logo" />
                 </Link>
                 <ul className="nav-links">
                     <NavLink to="/Activities">Activities</NavLink>

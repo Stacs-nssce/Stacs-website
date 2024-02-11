@@ -1,4 +1,5 @@
 import "./footer.css";
+import insta from "../../assets/instagram.png"
 
 export default function Footer() {
     return (
@@ -12,7 +13,7 @@ export default function Footer() {
                             <img src="./img/linkedIn.png" />
                         </a>
                         <a>
-                            <img src="./img/instagram.png" />
+                            <img src={insta} />
                         </a>
                         <a>
                             <img src="./img/youtube.png" />
