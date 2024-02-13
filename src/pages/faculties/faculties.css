@@ -27,8 +27,8 @@
 }
 
 .side-border {
-    background-color: #acacac;
-    /* width: 0.25rem; */
+    /* background-color: #acacac; */
+    width: 0.25rem;
     height: 30rem;
 }
 
@@ -118,7 +118,7 @@
     }
 
     .side-border {
-        background-color: #acacac;
+        /* background-color: #acacac; */
         width: 25rem;
         height: 0.25rem;
     }
