@@ -18,14 +18,15 @@ nav {
         }
 
         .nav-links {
-            width: 50%;
+            width: 80%;
             display: flex;
             margin-right: 3rem;
-            gap: 2.5rem;
+            gap: 2rem;
             justify-content: right;
             font-size: x-large;
 
             a {
+                overflow-x: visible;
                 font-size: 1.1rem;
                 text-decoration: none;
                 color: black;
