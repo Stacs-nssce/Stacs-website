@@ -9,7 +9,6 @@ const AwardDetails = () => {
     const [awardTitle, setAwardTitle] = useState("");
     const [awardCover, setAwardCover] = useState("");
 
-
     useEffect(() => {
         axios
             .get(
@@ -29,9 +28,7 @@ const AwardDetails = () => {
     return (
         <div>
             <h1>Award Details</h1>
-            <div>
-                <img src={awardCover} alt="award cover" />
-            </div>
+            <div>{/* <img src={awardCover} alt="award cover" /> */}</div>
             <div>{awardTitle}</div>
             <div>{awardContent}</div>
         </div>

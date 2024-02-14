@@ -24,7 +24,7 @@ const ActivitiesPage = () => {
                         attribute: mdf.attributes,
                         desc: element.sha,
                         body: mdf.body,
-                        id: element.name.slice(0, -3),
+                        id: element.name,
                     };
                 })
             );
@@ -49,7 +49,7 @@ const ActivitiesPage = () => {
                 {activities.map((activity) => (
                     <div key={activity.id} className="activity-card">
                         <a
-                            href={`/activities-desc/${activity.id}/${activity.desc}`}
+                            href={`/activities-desc/${activity.id}/`}
                             className="nuxt-link"
                         >
                             <div className="card-image">

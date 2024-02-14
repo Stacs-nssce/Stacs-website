@@ -28,6 +28,18 @@ export default function Faculties() {
             position: "Professor",
             image: "john-doe.jpg",
         },
+        {
+            id: 5,
+            name: "John Doe",
+            position: "Professor",
+            image: "john-doe.jpg",
+        },
+        {
+            id: 6,
+            name: "John Doe",
+            position: "Professor",
+            image: "john-doe.jpg",
+        },
     ];
 
     return (

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import fm from "front-matter";
-import "./awards.css"; // Import CSS file
+import "./Awards.css"; // Import CSS file
 
 const Awards = () => {
     const [awards, setAwards] = useState([]);
@@ -26,7 +26,6 @@ const Awards = () => {
                     })
                 );
                 setAwards(fetchedAwards);
-                
             })
             .catch((error) => {
                 console.error("Error fetching awards:", error);
@@ -41,24 +40,22 @@ const Awards = () => {
                     {awards.map((award) => (
                         <div key={award.id} className="col l4 m6 s12">
                             <a
-                            href={`/awards-desc/${award.id}`}
-                            className="award-link"
-                        >
-                            <div
-                                className="card small"
-                                >
+                                href={`/awards-desc/${award.id}`}
+                                className="award-link"
+                            >
+                                <div className="card small">
                                     <img
                                         src={award.attribute.cover}
                                         alt="Award cover"
                                         className="award-image center-align"
                                     />
-                                <div className="card-content">
-                                    <h5>
-                                        <b>{award.attribute.title}</b>
-                                    </h5>
+                                    <div className="card-content">
+                                        <h5>
+                                            <b>{award.attribute.title}</b>
+                                        </h5>
+                                    </div>
                                 </div>
-                            </div>
-                                </a>
+                            </a>
                         </div>
                     ))}
                 </div>

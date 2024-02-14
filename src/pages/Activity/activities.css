@@ -1,0 +1,108 @@
+.activities-page {
+    font-family: sans-serif;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.activities-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.activity-card {
+    width: 300px;
+    margin: 0 10px 20px;
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #ece9e6;
+}
+
+.card-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.act-card-title {
+    font-size: 1.5rem;
+}
+
+.act-card-date {
+    color: #666;
+}
+
+.activities-page {
+    font-family: sans-serif;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.activities-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.activity-card {
+    width: 300px;
+    margin: 0 10px 20px;
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #ece9e6;
+    transition: transform 0.3s ease-in-out;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px); /* Move the card up slightly on hover */
+}
+
+.card-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.act-card-title {
+    font-size: 1.5rem;
+}
+
+.act-card-date {
+    color: #666;
+}

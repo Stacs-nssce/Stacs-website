@@ -20,17 +20,17 @@
                     font-size: 3.1rem;
                     width: 28rem;
                     font-weight: 400;
-                    margin-top: 4rem;
+                    margin-top: 2rem;
                     padding-bottom: 5vh;
                 }
             }
 
             .quote {
-                margin-top: 8rem;
+                /* margin-top: 8rem; */
 
                 .quoter {
                     display: flex;
-                    padding-top: 2.5vh;
+                    padding-top: 1vh;
                     justify-content: right;
                 }
             }
