@@ -5,12 +5,12 @@ import Footer from "./components/footer/footer";
 import Home from "./pages/home/Home";
 import Faculties from "./pages/faculties/faculties";
 import Activities from "./pages/Activity/activities";
-import Awards from "./pages/Awards/Awards";
+import Awards from "./pages/awards/Awards";
 import Newsletter from "./pages/newsletter/newsletter";
 import Gallery from "./pages/gallery/gallery";
-import Blog from "./pages/Blog/Blog";
+import Blog from "./pages/blog/Blog";
 import Commitee from "./pages/commitee/commitee";
-import AwardDetails from "./pages/AwardDetails/AwardDetails";
+import AwardDetails from "./pages/awarddetails/awarddetails";
 import ActivityDetails from "./pages/ActivityDetails/ActivityDetails";
 
 function App() {

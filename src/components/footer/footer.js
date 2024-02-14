@@ -1,5 +1,5 @@
 import "./footer.css";
-import insta from "../../assets/instagram.png"
+import insta from "../../assets/instagram.png";
 
 export default function Footer() {
     return (
