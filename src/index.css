@@ -4,6 +4,8 @@
 
 * {
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 @media (max-width: 1439px) {

@@ -1,10 +1,10 @@
 /*all styles in here, except whatever has to be inline.*/
 
-* {
+/* * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
+    
+} */
 
 /* HEADER STYLING BEGINS HERE */
 .nav-center {
@@ -50,8 +50,8 @@ body {
 }
 
 .container {
-    width: 100%;
-    padding: 50px 5% 0 5%;
+    /* width: 100%; */
+    
 }
 
 /*section*/
@@ -155,7 +155,7 @@ body {
     }
 
     .container {
-        padding: 100px 10% 0 10%;
+        
     }
 
     .card {

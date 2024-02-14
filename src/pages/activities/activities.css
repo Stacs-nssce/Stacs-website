@@ -101,8 +101,20 @@
 
 .act-card-title {
     font-size: 1.5rem;
+    margin:1rem;
 }
 
 .act-card-date {
     color: #666;
+    margin:1rem;
+}
+
+a {
+    text-decoration: none;
+  }
+
+  h5 {
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 20px 0;
 }

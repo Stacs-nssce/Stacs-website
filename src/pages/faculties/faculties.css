@@ -27,7 +27,7 @@
 }
 
 .side-border {
-    background-color: #acacac;
+    /* background-color: #acacac; */
     width: 0.25rem;
     height: 30rem;
 }
@@ -68,7 +68,7 @@
     border-radius: 50%;
     background-color: white;
     margin-top: 3rem;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .mem-name {
@@ -118,7 +118,7 @@
     }
 
     .side-border {
-        background-color: #acacac;
+        /* background-color: #acacac; */
         width: 25rem;
         height: 0.25rem;
     }
