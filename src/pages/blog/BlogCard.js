@@ -1,46 +1,67 @@
-// BlogCard.js
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import fm from "front-matter";
+import "./BlogCard.css";
 
-import React from "react";
-import { Link } from "react-router-dom";
-import "./BlogCard.css"; // Import the CSS file
+const Awards = () => {
+    const [blog, setBlog] = useState([]);
 
-function BlogCard({ post }) {
+    useEffect(() => {
+        axios
+            .get(
+                "https://api.github.com/repos/stacsnssce/webdata/contents/posts"
+            )
+            .then(async (response) => {
+                const data = response.data;
+                const fetchedBlogs = await Promise.all(
+                    data.map(async (element) => {
+                        const res = await axios.get(element.download_url);
+                        const mdf = fm(res.data);
+                        return {
+                            attribute: mdf.attributes,
+                            desc: element.sha,
+                            body: mdf.body,
+                            id: element.name,
+                        };
+                    })
+                );
+                setBlog(fetchedBlogs);
+            })
+            .catch((error) => {
+                console.error("Error fetching Blogs:", error);
+            });
+    }, []);
+
     return (
-        <Link to={`/blog/${post.id}`} className="card-link">
-            {" "}
-            {/* Wrap the card with Link */}
-            <div className="card">
-                <div className="card__header">
-                    <img
-                        src={`https://source.unsplash.com/600x400/?${post.title}`}
-                        alt="card__image"
-                        className="card__image"
-                        width="600"
-                    />
-                </div>
-                <div className="card__body">
-                    <span className={`tag tag-${post.tagColor}`}>
-                        {post.tag}
-                    </span>
-                    <h4>{post.title}</h4>
-                    <p>{post.excerpt}</p>
-                </div>
-                <div className="card__footer">
-                    <div className="user">
-                        <img
-                            src={`https://i.pravatar.cc/40?img=${post.id}`}
-                            alt="user__image"
-                            className="user__image"
-                        />
-                        <div className="user__info">
-                            <h5>{post.author}</h5>
-                            <small>{post.date}</small>
+        <section className="award-wrapper container">
+            <h1 className="award-title center-align">Achievements</h1>
+            <div className="container award-card">
+                <div className="row">
+                    {blog.map((blog) => (
+                        <div key={blog.id} className="col l4 m6 s12">
+                            <a
+                                href={`/blogs-desc/${blog.id}`}
+                                className="award-link"
+                            >
+                                <div className="card small">
+                                    <img
+                                        src={blog.attribute.cover}
+                                        alt="Award cover"
+                                        className="award-image center-align"
+                                    />
+                                    <div className="card-content">
+                                        <h5>
+                                            <b>{blog.attribute.title}</b>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </div>
+                    ))}
                 </div>
             </div>
-        </Link>
+        </section>
     );
-}
+};
 
-export default BlogCard;
+export default Awards;

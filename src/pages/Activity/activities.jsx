@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import frontMatter from "front-matter"; // Assuming you have this library installed
-import "./activities.css"; // Import the CSS file
+import frontMatter from "front-matter";
+import "./activities.css";
 
 const ActivitiesPage = () => {
     const [activities, setActivities] = useState([]);
@@ -29,7 +29,6 @@ const ActivitiesPage = () => {
                 })
             );
 
-            // Sort activities by date in descending order (latest first)
             activitiesData.sort((a, b) => {
                 const dateA = new Date(a.attribute.date);
                 const dateB = new Date(b.attribute.date);

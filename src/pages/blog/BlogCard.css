@@ -1,102 +1,55 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+.award-wrapper {
+    margin: 12px auto;
 }
 
-.body {
-    font-family: "Quicksand", sans-serif;
-    display: grid;
-    place-items: center;
-    height: 100vh;
+.award-title {
+    font-size: 32px;
+    font-weight: bolder;
+    font: Bold 40px/43px Source Sans Pro;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1200px;
-    margin-block: 2rem;
-    gap: 2rem;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-    object-fit: cover;
+.award-card {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s linear;
+    background-size: cover;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    width: clamp(20rem, calc(20rem + 2vw), 22rem);
-    overflow: hidden;
-    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
-    border-radius: 1em;
-    background: #ece9e6;
-    background: linear-gradient(to right, #ffffff, #ece9e6);
+    max-height: 450px !important;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.card__body {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgb(88, 90, 90);
 }
 
-.tag {
-    align-self: flex-start;
-    padding: 0.25em 0.75em;
-    border-radius: 1em;
-    font-size: 0.75rem;
+h5 {
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 20px 0;
 }
 
-.tag + .tag {
-    margin-left: 0.5em;
+.award-image {
+    height: 200px;
+    max-width: 100%; /* Add this line to constrain image width */
+    overflow: hidden; /* Add this line to hide overflowing content */
 }
 
-.tag-blue {
-    background: #56ccf2;
-    background: linear-gradient(to bottom, #2f80ed, #56ccf2);
-    color: #fafafa;
+.award-image img {
+    width: 100%; /* Set image width to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the entire container */
 }
 
-.tag-brown {
-    background: #d1913c;
-    background: linear-gradient(to bottom, #ffd194, #d1913c);
-    color: #fafafa;
+.card-content {
+    background: transparent;
+    padding: 0px 5px;
+    margin: 0px;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    color: rgb(80, 79, 79);
 }
-
-.tag-red {
-    background: #cb2d3e;
-    background: linear-gradient(to bottom, #ef473a, #cb2d3e);
-    color: #fafafa;
-}
-
-.card__body h4 {
-    font-size: 1.5rem;
-    text-transform: capitalize;
-}
-
-.card__footer {
-    display: flex;
-    padding: 1rem;
-    margin-top: auto;
-}
-
-.user {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.user__image {
-    border-radius: 50%;
-}
-
-.user__info > small {
-    color: #666;
-} */

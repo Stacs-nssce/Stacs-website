@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import fm from "front-matter";
-import "./Awards.css"; // Import CSS file
+import "./awards.css";
 
 const Awards = () => {
     const [awards, setAwards] = useState([]);
@@ -21,7 +21,7 @@ const Awards = () => {
                             attribute: mdf.attributes,
                             desc: element.sha,
                             body: mdf.body,
-                            id: element.name, // Using name as id
+                            id: element.name,
                         };
                     })
                 );
