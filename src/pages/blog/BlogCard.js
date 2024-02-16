@@ -3,7 +3,7 @@ import axios from "axios";
 import fm from "front-matter";
 import "./BlogCard.css";
 
-const Awards = () => {
+const Blog = () => {
     const [blog, setBlog] = useState([]);
 
     useEffect(() => {
@@ -45,7 +45,7 @@ const Awards = () => {
                             >
                                 <div className="card small">
                                     <img
-                                        src={blog.attribute.cover}
+                                        src={blog.attribute.image}
                                         alt="Award cover"
                                         className="award-image center-align"
                                     />
@@ -64,4 +64,4 @@ const Awards = () => {
     );
 };
 
-export default Awards;
+export default Blog;

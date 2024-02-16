@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./navbar.css";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.svg";
+import hamburg from "../../assets/menu.png";
 
 export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -26,7 +27,7 @@ export default function Navbar() {
                     <NavLink to="/Commitee">Commitee</NavLink>
                 </ul>
                 <div className="Hamburg" onClick={toggleMobileMenu}>
-                    <img src="./img/menu.png" />
+                    <img src={hamburg} alt="menu-icon" />
                 </div>
             </div>
             {mobileMenuOpen ? (

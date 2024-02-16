@@ -1,4 +1,5 @@
 import "./Home.css";
+import community from "../../assets/hero-img.svg";
 
 export default function Home() {
     return (
@@ -17,7 +18,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <img src="./img/hero-img.svg" alt="community" />
+                <img src={community} alt="community" />
             </div>
         </div>
     );
