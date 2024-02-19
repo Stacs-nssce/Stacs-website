@@ -15,3 +15,7 @@
     background-color: #ffb702;
     border-radius: 10px;
 }
+
+.RouteContainer {
+    min-height: 80vh;
+}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import fm from "front-matter";
-import "./awards.css";
+import "./Awards.css";
 
 const Awards = () => {
     const [awards, setAwards] = useState([]);
