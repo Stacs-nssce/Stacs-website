@@ -1,5 +1,5 @@
 import React from "react";
-import "./faculties.css";
+import "./Faculties.css";
 
 export default function Faculties() {
     // Sample data representing faculty members

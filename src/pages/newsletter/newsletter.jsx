@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./newsletter.css";
+import "./Newsletter.css";
 
 export default function Newsletter() {
     return (

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import frontMatter from "front-matter";
-import "./activities.css";
+import "./Activities.css";
 
 const ActivitiesPage = () => {
     const [activities, setActivities] = useState([]);
@@ -42,26 +42,26 @@ const ActivitiesPage = () => {
     };
 
     return (
-        <section className="activities-page">
-            <h1 className="page-title">Activities</h1>
-            <div className="container activities-wrapper">
+        <section className="wrapper">
+            <h1 className="title">Activities</h1>
+            <div className="rows">
                 {activities.map((activity) => (
-                    <div key={activity.id} className="activity-card">
+                    <div key={activity.id} className="row">
                         <a
                             href={`/activities-desc/${activity.id}/`}
-                            className="nuxt-link"
+                            className="link"
                         >
-                            <div className="card-image">
+                            <div className="image">
                                 <img
                                     src={activity.attribute.cover}
                                     alt="Activity"
                                 />
                             </div>
-                            <div className="card-content">
-                                <h5 className="act-card-title">
+                            <div className="content">
+                                <h5 className="content-title">
                                     <b>{activity.attribute.title}</b>
                                 </h5>
-                                <h6 className="act-card-date">
+                                <h6 className="content-date">
                                     {activity.attribute.date}
                                 </h6>
                             </div>

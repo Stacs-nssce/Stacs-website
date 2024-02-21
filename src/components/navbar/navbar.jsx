@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./navbar.css";
+import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import hamburg from "../../assets/menu.png";

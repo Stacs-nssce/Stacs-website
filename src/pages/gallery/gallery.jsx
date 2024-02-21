@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./gallery.css";
+import "./Gallery.css";
 
 const GalleryPage = () => {
     const [gallery, setGallery] = useState([]);

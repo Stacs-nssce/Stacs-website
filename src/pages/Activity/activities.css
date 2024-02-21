@@ -1,120 +1,107 @@
-.activities-page {
-    font-family: sans-serif;
-}
-
-.page-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.activities-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.activity-card {
-    width: 300px;
-    margin: 0 10px 20px;
-    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
-    border-radius: 1em;
-    background: #ece9e6;
-}
-
-.card-image {
-    height: 200px;
-    overflow: hidden;
-}
-
-.card-image img {
-    width: 100%;
+.wrapper {
+    width: 60%;
     height: 100%;
-    object-fit: cover;
+    margin: auto;
 }
 
-.card-content {
-    padding: 1rem;
-}
-
-.act-card-title {
-    font-size: 1.5rem;
-}
-
-.act-card-date {
-    color: #666;
-}
-
-.activities-page {
-    font-family: sans-serif;
-}
-
-.page-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.activities-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.activity-card {
-    width: 300px;
-    margin: 0 10px 20px;
-    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
-    border-radius: 1em;
-    background: #ece9e6;
-    transition: transform 0.3s ease-in-out;
-}
-
-.activity-card:hover {
-    transform: translateY(-5px); /* Move the card up slightly on hover */
-}
-
-.card-image {
-    height: 200px;
-    overflow: hidden;
-}
-
-.card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card-content {
-    padding: 1rem;
-}
-
-.act-card-title {
-    font-size: 1.5rem;
-    margin: 1rem;
-}
-
-.act-card-date {
-    color: #666;
-    margin: 1rem;
-}
-
-a {
-    text-decoration: none;
-}
-
-h5 {
-    font-size: 18px;
+.title {
+    font-size: 32px;
     font-weight: bolder;
-    margin: 20px 0;
+    font: Bold 40px/43px Source Sans Pro;
+    margin: 20px 0 20px 0;
+    overflow: hidden;
+}
+
+.rows {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    height: 90%;
+
+    .row {
+        width: 100%;
+        cursor: pointer;
+        transition: 0.2s linear;
+        background-size: cover;
+        /* max-height: 450px !important; */
+        height: 280px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        border-bottom: solid 5px orange;
+        min-height: 400px;
+
+        .link {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+
+            .image {
+                margin: 5px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                /* height: 100%px; */
+                width: 70%;
+                /* max-width: 100%; */
+                overflow: none;
+                /* width: 100%; */
+                /* height: auto; */
+            }
+
+            .content {
+                background: transparent;
+                padding: 0px 5px;
+                margin: 0px;
+                font-size: 12px;
+                font-weight: normal;
+                text-align: center;
+                color: rgb(80, 79, 79);
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .content-title {
+                    font-size: 24px;
+                    font-weight: bolder;
+                    margin: 20px 0;
+                    width: 100%;
+                    word-wrap: break-word;
+                    b {
+                    }
+                }
+
+                .content-date {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .row:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 20px rgb(88, 90, 90);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper {
+        min-width: 80vw;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .rows {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rows:active {
+        transform: scale(1.01);
+        box-shadow: 0 0 20px rgb(88, 90, 90);
+    }
 }

@@ -1,4 +1,4 @@
-import "./footer.css";
+import "./Footer.css";
 import insta from "../../assets/instagram.png";
 import yt from "../../assets/youtube.png";
 import lnkdin from "../../assets/linkedIn.png";

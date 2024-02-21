@@ -30,7 +30,7 @@
         display: flex;
         justify-content: center;
         border-bottom: solid 5px orange;
-        min-height: 300px;
+        min-height: 400px;
 
         .award-link {
             display: flex;

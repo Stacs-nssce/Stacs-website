@@ -1,5 +1,5 @@
 import React from "react";
-import "./commitee.css";
+import "./Commitee.css";
 
 export default function Committee() {
     // Sample data representing team members
