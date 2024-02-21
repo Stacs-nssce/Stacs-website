@@ -33,32 +33,30 @@ const Awards = () => {
     }, []);
 
     return (
-        <section className="award-wrapper container">
-            <h1 className="award-title center-align">Achievements</h1>
-            <div className="container award-card">
-                <div className="row">
-                    {awards.map((award) => (
-                        <div key={award.id} className="col l4 m6 s12">
+        <section className="award-wrapper">
+            <h1 className="award-title">Achievements</h1>
+            <div className="rows">
+                {awards.map((award) => {
+                    return (
+                        <div key={award.id} className="row">
                             <a
                                 href={`/awards-desc/${award.id}`}
                                 className="award-link"
                             >
-                                <div className="card small">
-                                    <img
-                                        src={award.attribute.cover}
-                                        alt="Award cover"
-                                        className="award-image center-align"
-                                    />
-                                    <div className="card-content">
-                                        <h5>
-                                            <b>{award.attribute.title}</b>
-                                        </h5>
-                                    </div>
+                                <img
+                                    src={award.attribute.cover}
+                                    alt="Award cover"
+                                    className="award-image"
+                                />
+                                <div className="content">
+                                    <h5>
+                                        <b>{award.attribute.title}</b>
+                                    </h5>
                                 </div>
                             </a>
                         </div>
-                    ))}
-                </div>
+                    );
+                })}
             </div>
         </section>
     );

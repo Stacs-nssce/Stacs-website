@@ -13,13 +13,13 @@ export default function Footer() {
                 <div className="images">
                     <img src={img8} alt="img-8" />
                     <div className="links">
-                        <a>
+                        <a href="linkedin.com">
                             <img src={lnkdin} alt="linkedin-icon" />
                         </a>
-                        <a>
+                        <a href="instagram.com">
                             <img src={insta} alt="insta-icon" />
                         </a>
-                        <a>
+                        <a href="youtube.com/">
                             <img src={yt} alt="YT-icon" />
                         </a>
                     </div>

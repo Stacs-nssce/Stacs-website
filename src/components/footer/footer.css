@@ -10,6 +10,7 @@
     height: 20rem;
     overflow: hidden;
     z-index: -1;
+    margin-top: 40px;
 
     > img {
         position: absolute;
