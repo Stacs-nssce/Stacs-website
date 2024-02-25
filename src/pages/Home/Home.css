@@ -1,0 +1,94 @@
+.home {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+
+    .wrapper {
+        display: flex;
+        justify-content: left;
+        width: 70rem;
+
+        .text-holder {
+            display: flex;
+            flex-direction: column;
+            margin-right: 4.3rem;
+            width: 50%;
+
+            .info {
+                h1 {
+                    font-family: "Space Grotesk", sans-serif;
+                    font-size: 3.1rem;
+                    width: 28rem;
+                    font-weight: 400;
+                    margin-top: 2rem;
+                    padding-bottom: 5vh;
+                }
+            }
+
+            .quote {
+                /* margin-top: 8rem; */
+
+                .quoter {
+                    display: flex;
+                    padding-top: 1vh;
+                    justify-content: right;
+                }
+            }
+        }
+
+        img {
+            width: 38rem;
+            margin-top: 4rem;
+        }
+    }
+
+    h5 {
+        font-family: "Inter", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .home {
+        justify-content: center;
+        text-align: center;
+        margin-top: 5rem;
+        padding: 1rem;
+
+        h5 {
+            font-size: 4vw;
+            text-align: left;
+        }
+
+        .wrapper {
+            flex-direction: column-reverse;
+
+            .text-holder {
+                width: 100%;
+                margin: 0;
+
+                .info {
+                    /* height: 70vh; */
+                    margin-bottom: 4vh;
+
+                    h1 {
+                        margin-top: 2rem;
+                        width: 100%;
+                    }
+                }
+
+                .quote {
+                    /* height: 70vh; */
+                    /* padding-top: 0; */
+                    margin: 0;
+                }
+            }
+
+            img {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}
