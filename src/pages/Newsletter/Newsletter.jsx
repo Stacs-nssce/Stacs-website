@@ -9,7 +9,7 @@ export default function Newsletter() {
                 <div className="side-boreder"></div>
             </div>
             <div className="content">
-                <Link to="/Newsletter/A"></Link>
+                <Link to="/Newsletter/"></Link>
                 <Link to="/Newsletter/B"></Link>
                 <Link to="/Newsletter/C"></Link>
                 <Link to="/Newsletter/D"></Link>
