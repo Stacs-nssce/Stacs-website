@@ -8,13 +8,18 @@
     padding-top: 1.5rem;
     gap: 5rem;
     text-align: center;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    margin-top: 124px;
 }
 
 .faculty-title-container {
+    margin-top: 24px;
     display: grid;
     justify-content: right;
-    align-items: center;
-    width: 10rem;
+    align-items: start;
+    width: 5rem;
     grid-template-columns: 0fr 0fr;
 }
 
@@ -24,12 +29,8 @@
     font-size: 3rem;
     line-height: 3rem;
     overflow-wrap: break-word;
-}
-
-.side-border {
-    /* background-color: #acacac; */
-    width: 0.25rem;
-    height: 30rem;
+    border-right: 0.25rem solid #ffbf23;
+    overflow-x: unset;
 }
 
 .faculty-mem {
@@ -39,26 +40,22 @@
     margin: 19px;
 }
 
-.container-y {
-    display: grid;
-    grid-template-rows: 0fr 0fr 0fr;
-    justify-content: center;
-    width: 11.5rem;
-    height: 15rem;
+.container-y,
+.container-b {
+    box-sizing: border-box;
+    padding: 3rem 2rem 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
     border: 0.3rem solid #ffbf23;
     background: linear-gradient(to top, #d9d9d9a6 70%, transparent 70%);
     border-top-left-radius: 1.5rem;
 }
 
 .container-b {
-    display: grid;
-    grid-template-rows: 0fr 0fr 0fr;
-    justify-content: center;
-    width: 11.5rem;
-    height: 15rem;
     border: 0.3rem solid black;
-    background: linear-gradient(to top, #d9d9d9a6 70%, transparent 70%);
-    border-top-left-radius: 1.5rem;
 }
 
 .mem-img {
@@ -67,18 +64,27 @@
     border: 0.14rem solid #7f808094;
     border-radius: 50%;
     background-color: white;
-    margin-top: 3rem;
     overflow: hidden;
 }
 
+.mem-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
 .mem-name {
+    color: black;
     font-size: 1rem;
     margin-top: 1rem;
+    overflow-x: unset;
 }
 
 .mem-position {
     font-size: 0.7rem;
-    color: #ffbf23;
+    color: #000000;
+    overflow-x: unset;
 }
 
 .bottom-bar {
@@ -103,12 +109,14 @@
     .faculties {
         grid-template-columns: 1fr;
         gap: 1rem;
+        margin: 0;
     }
 
     .faculty-title {
         overflow-wrap: normal;
         width: auto;
         padding: 0 0 1rem 0;
+        border: none;
     }
 
     .faculty-title-container {

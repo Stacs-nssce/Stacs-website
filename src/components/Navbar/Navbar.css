@@ -31,6 +31,24 @@ nav {
                 text-decoration: none;
                 color: black;
                 font-family: "inter";
+                position: relative;
+            }
+            a:hover {
+                color: black;
+            }
+            a::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background: #ffbf23;
+                transition: width 0.3s;
+            }
+            a:hover::after {
+                width: 100%;
+                transition: width 0.3s;
             }
         }
     }

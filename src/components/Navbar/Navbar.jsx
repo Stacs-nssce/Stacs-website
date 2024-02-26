@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.svg";
+import stacs from "../../assets/STACS.svg";
 import hamburg from "../../assets/menu.png";
 
 export default function Navbar() {
@@ -15,7 +16,7 @@ export default function Navbar() {
         <nav>
             <div className="linksholder">
                 <Link className="homeLink" to="/">
-                    <img src={logo} alt="stacs logo" />
+                    <img src={stacs} alt="stacs logo" />
                 </Link>
                 <ul className="nav-links">
                     <NavLink to="/Activities">Activities</NavLink>
