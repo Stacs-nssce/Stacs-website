@@ -9,11 +9,11 @@ export default function Newsletter() {
                 <div className="side-boreder"></div>
             </div>
             <div className="content">
-                <Link to="/Newsletter/"></Link>
-                <Link to="/Newsletter/B"></Link>
-                <Link to="/Newsletter/C"></Link>
-                <Link to="/Newsletter/D"></Link>
-                <Link to="/Newsletter/E"></Link>
+                <Link to="/Newsletter/201718.md"></Link>
+                <Link to="/Newsletter/201819.md"></Link>
+                <Link to="/Newsletter/201920.md"></Link>
+                <Link to="/Newsletter/202021.md"></Link>
+                <Link to="/Newsletter/202122.md"></Link>
                 <Link to="/Newsletter/F"></Link>
             </div>
         </div>

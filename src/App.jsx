@@ -14,6 +14,7 @@ import AwardDetails from "./pages/AwardDetails/AwardDetails";
 import ActivityDetails from "./pages/ActivityDetails/ActivityDetails";
 import BlogDetails from "./pages/BlogDetails/BlogDetails";
 import Loading from "./components/Loading/Loading";
+import NewsletterPage from "./pages/NewsletterPage/NewsletterPage";
 
 function App() {
     return (
@@ -34,6 +35,11 @@ function App() {
                         element={<AwardDetails />}
                     />
                     <Route path="/Newsletter" element={<Newsletter />}></Route>
+                    <Route
+                        path="/Newsletter/:id"
+                        element={<NewsletterPage />}
+                    ></Route>
+
                     <Route path="/Gallery" element={<Gallery />}></Route>
                     <Route path="/Blog" element={<Blog />}></Route>
                     <Route
