@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import fm from "front-matter";
 import "./BlogCard.css";
-import { Link } from "react-router-dom";
 
 const Blog = () => {
     const [blog, setBlog] = useState([]);
@@ -35,13 +34,13 @@ const Blog = () => {
 
     return (
         <section className="award-wrapper">
-            <h1 className="award-title">Blog</h1>
+            <h1 className="title">Blogs</h1>
             <div className="rows">
                 {blog.map((blog) => {
                     return (
                         <div key={blog.id} className="row">
-                            <Link
-                                to={`/blogs-desc/${blog.id}`}
+                            <a
+                                href={`/blogs-desc/${blog.id}`}
                                 className="award-link"
                             >
                                 <img
@@ -54,7 +53,7 @@ const Blog = () => {
                                         <b>{blog.attribute.title}</b>
                                     </h5>
                                 </div>
-                            </Link>
+                            </a>
                         </div>
                     );
                 })}

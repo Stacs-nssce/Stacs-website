@@ -19,3 +19,10 @@
 .RouteContainer {
     min-height: 80vh;
 }
+
+.title {
+    text-align: center;
+    font: inter 60px;
+    font-size: 32px;
+    font-weight: 600;
+}

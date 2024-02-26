@@ -1,47 +1,11 @@
-/* .container {
-    font-family: sans-serif;
-    padding: 20px;
-}
-
-.heading {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.event {
-    margin-bottom: 40px;
-}
-
-.event-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.img {
-    width: calc(25% - 10px);
-    height: auto;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
-.img:hover {
-    transform: scale(1.1);
-} */
-
 .container {
-    font-family: sans-serif;
+    font-family: inter;
     padding: 20px;
     display: grid;
     place-items: center;
 
     .heading {
+        font-weight: 600px;
         text-align: center;
         font-size: 2rem;
         margin-bottom: 1rem;

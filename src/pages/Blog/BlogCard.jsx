@@ -34,7 +34,7 @@ const Blog = () => {
 
     return (
         <section className="award-wrapper">
-            <h1 className="award-title">Achievements</h1>
+            <h1 className="title">Blogs</h1>
             <div className="rows">
                 {blog.map((blog) => {
                     return (

@@ -34,7 +34,7 @@ const Awards = () => {
 
     return (
         <section className="award-wrapper">
-            <h1 className="award-title">Achievements</h1>
+            <h1 className="title">Achievements</h1>
             <div className="rows">
                 {awards.map((award) => {
                     return (

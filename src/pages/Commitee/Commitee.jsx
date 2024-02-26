@@ -1,61 +1,68 @@
 import React from "react";
 import "./Commitee.css";
+import Riya from "./assets/RiyaS.jpg";
+import Achuth from "./assets/Achuth R Kumar.jpg";
+import Sreejith from "./assets/Sreejith M Varma.jpg";
+import Karthik from "./assets/Karthik Krishna S.jpg";
+import Ashish from "./assets/Ashish B.jpg";
+import DrSruthy from "./assets/Dr.Sruthy Manmadhan.jpg";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Committee() {
     // Sample data representing team members
     const teamMembers = [
         {
             id: 1,
-            name: "John Doe",
-            role: "FrontEnd Developer",
+            name: "Dr.Sruthy Manmadhan",
+            role: "Faculty In-Charge",
+            image: DrSruthy,
             socials: {
                 platform: "link",
-                platform2: "link",
             },
         },
         {
             id: 2,
-            name: "John Doe",
-            role: "Backend Developer",
+            name: "Achuth R Kumar",
+            role: "Chariman",
+            image: Achuth,
             socials: {
                 platform: "link",
-                platform2: "link",
             },
         },
         {
             id: 3,
-            name: "John Doe",
-            role: "Full-Stack Developer",
+            name: "Riya S",
+            role: "Secretary",
+            image: Riya,
             socials: {
                 platform: "link",
-                platform2: "link",
             },
         },
         {
             id: 4,
-            name: "John Doe",
-            role: "Developer",
+            name: "Sreejith M Varma",
+            role: "Joint Secretary",
+            image: Sreejith,
             socials: {
                 platform: "link",
-                platform2: "link",
             },
         },
         {
             id: 5,
-            name: "John Doe",
-            role: "Not a Developer",
+            name: "Karthik Krishna S",
+            role: "Treasurer",
+            image: Karthik,
             socials: {
                 platform: "link",
-                platform2: "link",
             },
         },
         {
             id: 6,
-            name: "John Doe",
-            role: "Maybe a not a still can be a Developer",
+            name: "Ashish B",
+            role: "Join Treasurer",
+            image: Ashish,
             socials: {
                 platform: "link",
-                platform2: "link",
             },
         },
 
@@ -78,7 +85,7 @@ export default function Committee() {
                         <div>
                             <img
                                 className="img"
-                                src="./assets/demo-image.png"
+                                src={member.image}
                                 alt={member.name}
                             />
                         </div>
@@ -90,10 +97,7 @@ export default function Committee() {
                             {Object.keys(member.socials).map((social) => {
                                 return (
                                     <a href={member.socials[social]}>
-                                        <img
-                                            src={`./assets/${social}.svg`}
-                                            alt={social}
-                                        />
+                                        <FaLinkedin size={40} />
                                     </a>
                                 );
                             })}

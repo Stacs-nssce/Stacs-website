@@ -9,11 +9,9 @@
 }
 
 .title {
-    font-size: 32px;
-    font-weight: bolder;
-    font: Bold 40px/43px Source Sans Pro;
     margin: 20px 0 20px 0;
     overflow: hidden;
+    /* text-align: center; */
 }
 
 .rows {

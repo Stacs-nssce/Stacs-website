@@ -28,11 +28,8 @@ const ActivityDetails = () => {
     }, [activityId]);
 
     return (
-        <div>
-            <h1>Activity Details </h1>
-            <div></div>
-
-            <ReactMarkdown>{activityContent}</ReactMarkdown>
+        <div className="Blog-Container">
+            <ReactMarkdown className="Desc">{activityContent}</ReactMarkdown>
         </div>
     );
 };

@@ -14,6 +14,15 @@
     text-align: center;
 }
 
+.Desc h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1rem;
+    text-align: center;
+    font: inter;
+}
+
 .Desc p {
     font-size: 1rem;
     font-weight: 400;
