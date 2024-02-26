@@ -23,8 +23,7 @@ const NewsletterPage = () => {
 
     return (
         <div>
-            {/* Render the Markdown content */}
-            <ReactMarkdown>{markdownContent}</ReactMarkdown>
+            <ReactMarkdown className="Desc">{markdownContent}</ReactMarkdown>
         </div>
     );
 };
