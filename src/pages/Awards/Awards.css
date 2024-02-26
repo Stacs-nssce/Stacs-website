@@ -37,6 +37,7 @@
             flex-direction: column;
             justify-content: center;
             width: 100%;
+            text-decoration: none;
 
             .award-image {
                 margin: 5px;

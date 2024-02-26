@@ -17,6 +17,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     height: 90%;
+    overflow: hidden;
 
     .row {
         width: 100%;
@@ -36,6 +37,7 @@
             flex-direction: column;
             justify-content: center;
             width: 100%;
+            text-decoration: none;
 
             .award-image {
                 margin: 5px;
