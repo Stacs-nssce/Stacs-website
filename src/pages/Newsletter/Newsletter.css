@@ -42,18 +42,43 @@
         padding: 2rem;
 
         a:nth-child(even) {
-            background-color: #d9d9d9;
+            /* background-color: #d9d9d9; */
             width: 90%;
             aspect-ratio: 1;
             margin: 3rem 2rem 1rem;
         }
 
         a:nth-child(odd) {
-            background-color: #d9d9d9;
+            /* background-color: #d9d9d9; */
             width: 90%;
             aspect-ratio: 1;
             margin: 1rem 2rem 3rem;
         }
+    }
+
+    a:nth-child(1) {
+        background-image: url("201718.png");
+        background-size: cover;
+    }
+    a:nth-child(2) {
+        background-image: url("201819.png");
+        background-size: cover;
+    }
+    a:nth-child(3) {
+        background-image: url("201920.png");
+        background-size: cover;
+    }
+    a:nth-child(4) {
+        background-image: url("202021.png");
+        background-size: cover;
+    }
+    a:nth-child(5) {
+        background-image: url("202122.png");
+        background-size: cover;
+    }
+    a:nth-child(6) {
+        background-image: url("ComingSoon.png");
+        background-size: cover;
     }
 }
 
