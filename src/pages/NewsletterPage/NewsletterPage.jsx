@@ -22,7 +22,7 @@ const NewsletterPage = () => {
     }, [id]);
 
     return (
-        <div>
+        <div className="newsletter-container">
             <ReactMarkdown className="Desc">{markdownContent}</ReactMarkdown>
         </div>
     );
