@@ -1,0 +1,138 @@
+:root {
+    font-family: Jost;
+}
+
+.faculties {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    padding-top: 1.5rem;
+    gap: 5rem;
+    text-align: center;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    margin-top: 124px;
+}
+
+.faculty-title-container {
+    margin-top: 24px;
+    display: grid;
+    justify-content: right;
+    align-items: start;
+    width: 5rem;
+    grid-template-columns: 0fr 0fr;
+}
+
+.faculty-title {
+    padding-right: 2rem;
+    width: 2rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    overflow-wrap: break-word;
+    border-right: 0.25rem solid #ffbf23;
+    overflow-x: unset;
+}
+
+.faculty-mem {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 19px;
+}
+
+.container-y,
+.container-b {
+    box-sizing: border-box;
+    padding: 3rem 2rem 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    border: 0.3rem solid #ffbf23;
+    background: linear-gradient(to top, #d9d9d9a6 70%, transparent 70%);
+    border-top-left-radius: 1.5rem;
+}
+
+.container-b {
+    border: 0.3rem solid black;
+}
+
+.mem-img {
+    width: 6rem;
+    height: 6rem;
+    border: 0.14rem solid #7f808094;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.mem-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.mem-name {
+    color: black;
+    font-size: 1rem;
+    margin-top: 1rem;
+    overflow-x: unset;
+}
+
+.mem-position {
+    font-size: 0.7rem;
+    color: #000000;
+    overflow-x: unset;
+}
+
+.bottom-bar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-bar img {
+    position: absolute;
+    min-width: 5rem;
+    right: 0;
+    top: 6rem;
+}
+
+.bottom-bar-bg {
+    position: absolute;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .faculties {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .faculty-title {
+        overflow-wrap: normal;
+        width: auto;
+        padding: 0 0 1rem 0;
+        border: none;
+    }
+
+    .faculty-title-container {
+        justify-content: center;
+        width: 100%;
+        grid-template-columns: 0fr;
+    }
+
+    .side-border {
+        /* background-color: #acacac; */
+        width: 25rem;
+        height: 0.25rem;
+    }
+
+    .faculty-mem {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}

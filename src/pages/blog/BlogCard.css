@@ -1,0 +1,99 @@
+.award-wrapper {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.award-title {
+    margin: 20px 0 20px 0;
+    overflow: hidden;
+}
+
+.rows {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    height: 90%;
+
+    .row {
+        width: 100%;
+        cursor: pointer;
+        transition: 0.2s linear;
+        background-size: cover;
+        /* max-height: 450px !important; */
+        height: 280px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        border-bottom: solid 5px orange;
+        min-height: 400px;
+
+        .award-link {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+
+            .award-image {
+                margin: 5px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                /* height: 100%px; */
+                width: 70%;
+                /* max-width: 100%; */
+                overflow: none;
+                /* width: 100%; */
+                /* height: auto; */
+            }
+
+            .content {
+                background: transparent;
+                padding: 0px 5px;
+                margin: 0px;
+                font-size: 12px;
+                font-weight: normal;
+                text-align: center;
+                color: rgb(80, 79, 79);
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                h5 {
+                    font-size: 18px;
+                    font-weight: bolder;
+                    margin: 20px 0;
+                    width: 100%;
+                    word-wrap: break-word;
+                    b {
+                    }
+                }
+            }
+        }
+    }
+
+    .row:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 20px rgb(88, 90, 90);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .award-wrapper {
+        min-width: 80vw;
+    }
+
+    .award-title {
+        font-size: 26px;
+    }
+
+    .rows {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rows:active {
+        transform: scale(1.01);
+        box-shadow: 0 0 20px rgb(88, 90, 90);
+    }
+}
