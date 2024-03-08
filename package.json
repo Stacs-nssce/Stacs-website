@@ -9,6 +9,7 @@
     "assert": "^2.1.0",
     "axios": "^1.6.7",
     "buffer": "^6.0.3",
+    "firebase": "^10.8.1",
     "front-matter": "^4.0.2",
     "markdown-it": "^14.0.0",
     "react": "^18.2.0",
