@@ -46,8 +46,10 @@ const ActivitiesPage = () => {
     };
 
     return (
-        <section className="wrapper">
-            <h1 className="title">Activities</h1>
+        <section className="Activity">
+            <div className="title">
+                <span> ACTIVITES</span>
+            </div>
             <div className="rows">
                 {isLoading
                     ? new Array(8).fill(null).map((_, i) => (
@@ -62,7 +64,7 @@ const ActivitiesPage = () => {
                           </div>
                       ))
                     : activities.map((activity) => (
-                          <div key={activity.id} className="row">
+                          <div key={activity.id} className="row2">
                               <a
                                   href={`/activities-desc/${activity.id}/`}
                                   className="link"
