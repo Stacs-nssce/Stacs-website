@@ -1,5 +1,5 @@
 :root {
-    font-size: 20px;
+    font-size: 1vw;
 }
 
 * {
@@ -8,7 +8,7 @@
     /* overflow-x: hidden; */
 }
 
-@media (max-width: 1439px) {
+/* @media (max-width: 1439px) {
     :root {
         font-size: 14px;
     }
@@ -18,11 +18,11 @@
     :root {
         font-size: 10px;
     }
-}
+} */
 
 /* Mobile view */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     :root {
         font-size: 10px;
     }
-}
+} */
