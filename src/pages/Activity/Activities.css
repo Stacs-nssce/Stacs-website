@@ -39,6 +39,14 @@
             border-bottom: solid 0.4rem orange;
             height: 24rem;
 
+            .image {
+                text-align: center;
+
+                img {
+                    height: 9rem;
+                }
+            }
+
             .link {
                 display: flex;
                 flex-direction: column;
