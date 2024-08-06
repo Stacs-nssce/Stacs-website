@@ -94,6 +94,7 @@
         }
 
         .rows {
+            grid-template-columns: repeat(2, 1fr);
             height: fit-content;
             overflow: visible;
             padding: 0 3rem;

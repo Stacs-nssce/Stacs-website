@@ -83,6 +83,7 @@
 
         .rows {
             height: fit-content;
+            grid-template-columns: repeat(2, 1fr);
             overflow: visible;
             padding: 0 3rem;
         }
