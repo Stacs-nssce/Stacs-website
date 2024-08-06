@@ -12,21 +12,16 @@
         display: grid;
         justify-content: right;
         align-items: center;
-        width: 10rem;
-        grid-template-columns: 0fr 0fr;
+        width: 8.5rem;
+        border-right: 0.3rem solid #acacac;
+        margin-right: 1rem;
 
         span {
             padding-right: 2rem;
-            width: 3rem;
-            font-size: 3rem;
-            line-height: 3rem;
+            width: 4rem;
+            font-size: 3.7rem;
+            line-height: 4rem;
             overflow-wrap: break-word;
-        }
-
-        .side-boreder {
-            /* background-color: #acacac;
-            width: 0.25rem; */
-            height: 30rem;
         }
     }
 
@@ -40,19 +35,22 @@
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
         padding: 2rem;
+        height: 38rem;
 
         a:nth-child(even) {
             /* background-color: #d9d9d9; */
-            width: 90%;
+            width: 65%;
+            overflow: hidden;
             aspect-ratio: 1;
-            margin: 3rem 2rem 1rem;
+            margin: 3rem 1.5rem 1rem;
         }
 
         a:nth-child(odd) {
             /* background-color: #d9d9d9; */
-            width: 90%;
+            width: 65%;
+            overflow: hidden;
             aspect-ratio: 1;
-            margin: 1rem 2rem 3rem;
+            margin: 1rem 1.5rem 3rem;
         }
     }
 
@@ -86,22 +84,16 @@
     .newsletter {
         grid-template-columns: 1fr;
         justify-items: center;
-        gap: 1rem;
 
         .title {
-            grid-template-columns: 1fr;
-            justify-items: center;
-            width: 100%;
+            width: 26rem;
+            display: flex;
+            border: none;
+            border-bottom: 0.3rem solid #acacac;
 
             span {
-                width: 25rem;
+                width: 100%;
                 padding: 0;
-                padding: 0 0 1rem 0;
-            }
-
-            .side-boreder {
-                height: 0.25rem;
-                width: 30rem;
             }
         }
 
@@ -111,6 +103,7 @@
             padding: 0.5rem;
             border-width: 0.75rem 0.25rem 0.75rem 0.25rem;
             margin-top: 1.5rem;
+            height: fit-content;
         }
     }
 }

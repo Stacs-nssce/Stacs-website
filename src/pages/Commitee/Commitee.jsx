@@ -70,24 +70,15 @@ export default function Committee() {
     ];
 
     return (
-        <div className="container">
-            <header>
-                <div className="nav">
-                    <div className="nav-content">
-                        <h3>Committee</h3>
-                    </div>
-                </div>
-            </header>
-
-            <section className="section">
+        <section className="Commitee">
+            <div className="title">
+                <span> COMMITEE</span>
+            </div>
+            <div className="rows">
                 {teamMembers.map((member) => (
-                    <div key={member.id} className="card">
-                        <div>
-                            <img
-                                className="img"
-                                src={member.image}
-                                alt={member.name}
-                            />
+                    <div key={member.id} className="row2">
+                        <div className="image">
+                            <img src={member.image} alt={member.name} />
                         </div>
                         <div className="info">
                             <h2>{member.name}</h2>
@@ -97,14 +88,14 @@ export default function Committee() {
                             {Object.keys(member.socials).map((social) => {
                                 return (
                                     <a href={member.socials[social]}>
-                                        <FaLinkedin size={40} />
+                                        <FaLinkedin size={20} />
                                     </a>
                                 );
                             })}
                         </div>
                     </div>
                 ))}
-            </section>
-        </div>
+            </div>
+        </section>
     );
 }

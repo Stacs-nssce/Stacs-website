@@ -6,7 +6,6 @@ export default function Newsletter() {
         <div className="newsletter">
             <div className="title">
                 <span>NEWSLETTER</span>
-                <div className="side-boreder"></div>
             </div>
             <div className="content">
                 <Link to="/Newsletter/201718.md"></Link>

@@ -106,10 +106,10 @@ export default function Faculties() {
 
     return (
         <div className="faculties">
-            <div className="faculty-title-container">
+            <div className="title">
                 <span className="faculty-title">FACULTIES</span>
             </div>
-            <div className="faculty-mem">
+            <div className="rows">
                 {facultyMembers.map((member) => (
                     <div
                         key={member.id}
