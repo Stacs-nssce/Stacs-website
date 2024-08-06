@@ -71,6 +71,7 @@
         justify-items: center;
 
         .title {
+            margin-top: 1rem;
             width: 20rem;
             border: none;
             border-bottom: 0.3rem solid #acacac;

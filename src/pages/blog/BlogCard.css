@@ -74,21 +74,31 @@
 }
 
 @media screen and (max-width: 767px) {
-    .award-wrapper {
+    .Blog {
         min-width: 80vw;
-    }
+        grid-template-columns: 1fr;
+        justify-items: center;
 
-    .award-title {
-        font-size: 26px;
-    }
+        .title {
+            margin-top: 1rem;
+            width: 12rem;
+            border: none;
+            border-bottom: 0.3rem solid #acacac;
 
-    .rows {
-        display: flex;
-        flex-direction: column;
-    }
+            span {
+                width: 100%;
+            }
+        }
 
-    .rows:active {
-        transform: scale(1.01);
-        box-shadow: 0 0 20px rgb(88, 90, 90);
+        .rows {
+            height: fit-content;
+            overflow: visible;
+            padding: 0 3rem;
+        }
+
+        .row:hover {
+            transform: none;
+            box-shadow: none;
+        }
     }
 }

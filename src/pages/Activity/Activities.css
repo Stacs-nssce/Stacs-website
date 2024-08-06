@@ -23,6 +23,7 @@
 
     .rows {
         display: grid;
+        align-items: center;
         padding: 1rem;
         grid-template-columns: repeat(4, 1fr);
         gap: 2.5rem;
@@ -85,7 +86,7 @@
             }
         }
 
-        .row:hover {
+        .row2:hover {
             transform: scale(1.01);
             box-shadow: 0 0 1rem rgb(88, 90, 90);
         }
@@ -140,6 +141,7 @@
         justify-items: center;
 
         .title {
+            margin-top: 1rem;
             width: 20rem;
             border: none;
             border-bottom: 0.3rem solid #acacac;
