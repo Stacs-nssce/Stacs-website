@@ -1,101 +1,105 @@
-/* Award.css */
-.award-wrapper {
-    width: 60%;
-    height: 100%;
-    margin: auto;
-}
-
-.title {
-    margin: 20px 0 20px 0;
-    overflow: hidden;
-}
-
-.rows {
+.Awards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    height: 90%;
+    grid-template-columns: 0fr 1fr;
+    justify-content: center;
+    align-items: center;
 
-    .row {
-        width: 100%;
-        cursor: pointer;
-        transition: 0.2s linear;
-        background-size: cover;
-        /* max-height: 450px !important; */
-        height: 280px;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        border-bottom: solid 5px orange;
-        min-height: 400px;
+    .title {
+        display: grid;
+        justify-content: right;
+        align-items: center;
+        width: 8.5rem;
+        border-right: 0.3rem solid #acacac;
+        margin-right: 1rem;
 
-        .award-link {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            text-decoration: none;
-
-            .award-image {
-                margin: 5px;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                /* height: 100%px; */
-                width: 70%;
-                /* max-width: 100%; */
-                overflow: none;
-                /* width: 100%; */
-                /* height: auto; */
-            }
-
-            .content {
-                background: transparent;
-                padding: 0px 5px;
-                margin: 0px;
-                font-size: 12px;
-                font-weight: normal;
-                text-align: center;
-                color: rgb(80, 79, 79);
-                width: 100%;
-                display: flex;
-                justify-content: center;
-
-                h5 {
-                    font-size: 18px;
-                    font-weight: bolder;
-                    margin: 20px 0;
-                    width: 100%;
-                    word-wrap: break-word;
-                    b {
-                    }
-                }
-            }
+        span {
+            padding-right: 2rem;
+            width: 4rem;
+            font-size: 3.7rem;
+            line-height: 4rem;
+            overflow-wrap: break-word;
         }
     }
 
-    .row:hover {
-        transform: scale(1.01);
-        box-shadow: 0 0 20px rgb(88, 90, 90);
+    .rows {
+        display: grid;
+        padding: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem;
+        margin: 1rem 1.5rem;
+        overflow-y: scroll;
+        height: 41rem;
+
+        .row2 {
+            width: 100%;
+            padding: 0 0.2rem;
+            cursor: pointer;
+            border-radius: 1rem;
+            border: solid 0.1rem #acacac;
+            border-bottom: solid 0.4rem orange;
+            height: 24rem;
+
+            .award-link {
+                display: grid;
+                grid-template-rows: 16rem 1fr;
+                justify-items: center;
+                align-items: center;
+                width: 100%;
+                text-decoration: none;
+
+                .award-image {
+                    margin-top: 3rem;
+                    width: 60%;
+                    display: block;
+                    overflow: none;
+                }
+
+                .content {
+                    color: rgb(80, 79, 79);
+                    align-self: flex-start;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    font-weight: bolder;
+                }
+            }
+        }
+
+        .row:hover {
+            transform: scale(1.01);
+            box-shadow: 0 0 1rem rgb(88, 90, 90);
+        }
+    }
+
+    .rows::-webkit-scrollbar {
+        display: none;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .award-wrapper {
+    .Awards {
         min-width: 80vw;
-    }
+        grid-template-columns: 1fr;
+        justify-items: center;
 
-    .award-title {
-        font-size: 26px;
-    }
+        .title {
+            width: 17.5rem;
+            border: none;
+            border-bottom: 0.3rem solid #acacac;
 
-    .rows {
-        display: flex;
-        flex-direction: column;
-    }
+            span {
+                width: 100%;
+            }
+        }
 
-    .rows:active {
-        transform: scale(1.01);
-        box-shadow: 0 0 20px rgb(88, 90, 90);
+        .rows {
+            height: fit-content;
+            overflow: visible;
+            padding: 0 3rem;
+        }
+
+        .row:hover {
+            transform: none;
+            box-shadow: none;
+        }
     }
 }
