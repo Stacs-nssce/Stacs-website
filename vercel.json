@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      {
+        "source": "/r/:path*",
+        "destination": "https://dilshadvln.pythonanywhere.com/api/url/get-full-url/:path*/"
+      }
+    ]
+}
