@@ -9,7 +9,7 @@ const Awards = () => {
     useEffect(() => {
         axios
             .get(
-                "https://api.github.com/repos/stacsnssce/webdata/contents/awards"
+                "https://api.github.com/repos/Stacs-nssce/webdata/contents/awards"
             )
             .then(async (response) => {
                 const data = response.data;

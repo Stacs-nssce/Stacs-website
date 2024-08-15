@@ -12,7 +12,7 @@ const AwardDetails = () => {
     useEffect(() => {
         axios
             .get(
-                `https://raw.githubusercontent.com/stacsnssce/webdata/master/awards/${awardId}`
+                `https://raw.githubusercontent.com/Stacs-nssce/webdata/master/awards/${awardId}`
             )
             .then((response) => {
                 const mdf = fm(response.data);

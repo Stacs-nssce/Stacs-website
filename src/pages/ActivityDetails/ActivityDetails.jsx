@@ -14,7 +14,7 @@ const ActivityDetails = () => {
     useEffect(() => {
         axios
             .get(
-                `https://raw.githubusercontent.com/stacsnssce/webdata/master/activities/${activityId}`
+                `https://raw.githubusercontent.com/Stacs-nssce/webdata/master/activities/${activityId}`
             )
             .then((response) => {
                 const mdf = fm(response.data);
