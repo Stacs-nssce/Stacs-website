@@ -32,50 +32,61 @@
         margin: 0 5rem;
         border-width: 0.75rem 1rem 0.75rem 0.25rem;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+        grid-template-columns: repeat(3, 1fr);
         justify-items: center;
         padding: 2rem;
         height: 38rem;
+        overflow-y: scroll;
 
         a:nth-child(even) {
-            /* background-color: #d9d9d9; */
-            width: 65%;
+            width: 15.57rem;
+            height: 22rem;
             overflow: hidden;
-            aspect-ratio: 1;
             margin: 3rem 1.5rem 1rem;
+            background-position: center;
         }
 
         a:nth-child(odd) {
-            /* background-color: #d9d9d9; */
-            width: 65%;
+            width: 15.57rem;
+            height: 22rem;
             overflow: hidden;
             aspect-ratio: 1;
             margin: 1rem 1.5rem 3rem;
+            background-position: center;
         }
     }
 
+    .content::-webkit-scrollbar {
+        display: none;
+    }
+
     a:nth-child(1) {
-        background-image: url("201718.png");
+        background-image: url("./Newsletters/201718.png");
         background-size: cover;
     }
     a:nth-child(2) {
-        background-image: url("201819.png");
+        background-image: url("./Newsletters/201819.png");
         background-size: cover;
     }
     a:nth-child(3) {
-        background-image: url("201920.png");
+        background-image: url("./Newsletters/201920.png");
         background-size: cover;
     }
     a:nth-child(4) {
-        background-image: url("202021.png");
+        background-image: url("./Newsletters/202021.png");
         background-size: cover;
     }
     a:nth-child(5) {
-        background-image: url("202122.png");
+        background-image: url("./Newsletters/202122.png");
         background-size: cover;
     }
     a:nth-child(6) {
-        background-image: url("ComingSoon.png");
+        background-image: url("./Newsletters/202223.jpg");
+        background-size: contain;
+    }
+    a:nth-child(7) {
+        background-image: url("./Newsletters/ComingSoon.png");
         background-size: cover;
     }
 }
