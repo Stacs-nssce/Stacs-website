@@ -9,7 +9,7 @@ const Blog = () => {
     useEffect(() => {
         axios
             .get(
-                "https://api.github.com/repos/stacsnssce/webdata/contents/posts"
+                "https://api.github.com/repos/Stacs-nssce/webdata/contents/posts"
             )
             .then(async (response) => {
                 const data = response.data;

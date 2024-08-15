@@ -12,7 +12,7 @@ const GalleryPage = () => {
     const fetchData = async () => {
         try {
             const response = await axios.get(
-                "https://raw.githubusercontent.com/stacsnssce/webdata/master/gallery.json"
+                "https://raw.githubusercontent.com/Stacs-nssce/webdata/master/gallery.json"
             );
             const sortedGallery = response.data.gallery.sort((a, b) =>
                 b.title.localeCompare(a.title)

@@ -110,7 +110,6 @@
 
         .content {
             grid-template-columns: 1fr 1fr;
-            width: 85%;
             padding: 0.5rem;
             border-width: 0.75rem 0.25rem 0.75rem 0.25rem;
             margin-top: 1.5rem;
