@@ -9,7 +9,7 @@ const Blog = () => {
     useEffect(() => {
         axios
             .get(
-                "https://api.github.com/repos/stacsnssce/webdata/contents/posts"
+                "https://api.github.com/repos/Stacs-nssce/webdata/contents/posts"
             )
             .then(async (response) => {
                 const data = response.data;
@@ -33,12 +33,14 @@ const Blog = () => {
     }, []);
 
     return (
-        <section className="award-wrapper">
-            <h1 className="title">Blogs</h1>
+        <section className="Blog">
+            <div className="title">
+                <span> BLOG</span>
+            </div>
             <div className="rows">
                 {blog.map((blog) => {
                     return (
-                        <div key={blog.id} className="row">
+                        <div key={blog.id} className="row2">
                             <a
                                 href={`/blogs-desc/${blog.id}`}
                                 className="award-link"

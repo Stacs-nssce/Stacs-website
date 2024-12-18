@@ -9,7 +9,7 @@ const Awards = () => {
     useEffect(() => {
         axios
             .get(
-                "https://api.github.com/repos/stacsnssce/webdata/contents/awards"
+                "https://api.github.com/repos/Stacs-nssce/webdata/contents/awards"
             )
             .then(async (response) => {
                 const data = response.data;
@@ -33,12 +33,14 @@ const Awards = () => {
     }, []);
 
     return (
-        <section className="award-wrapper">
-            <h1 className="title">Achievements</h1>
+        <section className="Awards">
+            <div className="title">
+                <span> AWARDS</span>
+            </div>
             <div className="rows">
                 {awards.map((award) => {
                     return (
-                        <div key={award.id} className="row">
+                        <div key={award.id} className="row2">
                             <a
                                 href={`/awards-desc/${award.id}`}
                                 className="award-link"
@@ -49,9 +51,7 @@ const Awards = () => {
                                     className="award-image"
                                 />
                                 <div className="content">
-                                    <h5>
-                                        <b>{award.attribute.title}</b>
-                                    </h5>
+                                    <b>{award.attribute.title}</b>
                                 </div>
                             </a>
                         </div>

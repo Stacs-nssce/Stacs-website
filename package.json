@@ -9,6 +9,7 @@
     "assert": "^2.1.0",
     "axios": "^1.6.7",
     "buffer": "^6.0.3",
+    "firebase": "^10.8.1",
     "front-matter": "^4.0.2",
     "markdown-it": "^14.0.0",
     "react": "^18.2.0",
@@ -23,8 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build": " react-scripts build",
+    "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "format": "npx prettier --write ./src",

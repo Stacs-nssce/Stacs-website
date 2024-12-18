@@ -19,7 +19,7 @@ const BlogDetails = () => {
     useEffect(() => {
         axios
             .get(
-                `https://raw.githubusercontent.com/stacsnssce/webdata/master/posts/${postId}`
+                `https://raw.githubusercontent.com/Stacs-nssce/webdata/master/posts/${postId}`
             )
             .then((response) => {
                 const mdf = fm(response.data);

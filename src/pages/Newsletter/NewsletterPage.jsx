@@ -10,7 +10,7 @@ const NewsletterPage = () => {
     useEffect(() => {
         axios
             .get(
-                `https://raw.githubusercontent.com/stacsnssce/webdata/master/newsletter/${id}`
+                `https://raw.githubusercontent.com/Stacs-nssce/webdata/master/newsletter/${id}`
             )
             .then((response) => {
                 const mdf = fm(response.data);

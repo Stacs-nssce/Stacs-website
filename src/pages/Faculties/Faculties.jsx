@@ -85,31 +85,31 @@ export default function Faculties() {
             id: 12,
             name: "Prof. Maanasa A S",
             position: "Assistant Professor Adhoc",
-            image: "https://raw.githubusercontent.com/stacsnssce/webassets/master/gallery/manasa.jpg",
+            image: "https://raw.githubusercontent.com/Stacs-nssce/webassets/master/gallery/manasa.jpg",
             profile: "https://www.nssce.ac.in/staff-profile.php?id=314",
         },
         {
             id: 13,
             name: "Prof. Pavithra T P",
             position: "Assistant Professor Adhoc",
-            image: "https://raw.githubusercontent.com/stacsnssce/webassets/master/gallery/pavithra.jpg",
+            image: "https://raw.githubusercontent.com/Stacs-nssce/webassets/master/gallery/pavithra.jpg",
             profile: "https://www.nssce.ac.in/staff-profile.php?id=315",
         },
         {
             id: 14,
             name: "Prof. Syama Krishna S",
             position: "Assistant Professor Adhoc",
-            image: "https://raw.githubusercontent.com/stacsnssce/webassets/master/gallery/syamakrishna.jpg",
+            image: "https://raw.githubusercontent.com/Stacs-nssce/webassets/master/gallery/syamakrishna.jpg",
             profile: "https://www.nssce.ac.in/staff-profile.php?id=378",
         },
     ];
 
     return (
         <div className="faculties">
-            <div className="faculty-title-container">
+            <div className="title">
                 <span className="faculty-title">FACULTIES</span>
             </div>
-            <div className="faculty-mem">
+            <div className="rows">
                 {facultyMembers.map((member) => (
                     <div
                         key={member.id}

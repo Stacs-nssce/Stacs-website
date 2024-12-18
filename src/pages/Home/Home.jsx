@@ -7,7 +7,7 @@ export default function Home() {
             <div className="wrapper">
                 <div className="text-holder">
                     <div className="info">
-                        <h1>Student's Association Of Computer Science</h1>
+                        <h1>Students' Association Of Computer Science</h1>
                         <h5>Department of Computer Science</h5>
                         <div className="quote">
                             <h5>
