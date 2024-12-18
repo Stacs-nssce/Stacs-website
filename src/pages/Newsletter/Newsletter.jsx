@@ -14,6 +14,7 @@ export default function Newsletter() {
                 <Link to="/Newsletter/202021.md"></Link>
                 <Link to="/Newsletter/202122.md"></Link>
                 <Link to="/Newsletter/202223.md"></Link>
+                <Link to="/Newsletter/202324.md"></Link>
                 <Link to="/Newsletter/"></Link>
             </div>
         </div>
