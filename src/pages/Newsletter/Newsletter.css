@@ -86,6 +86,10 @@
         background-size: contain;
     }
     a:nth-child(7) {
+        background-image: url("./Newsletters/202324.jpg");
+        background-size: cover;
+    }
+    a:nth-child(8) {
         background-image: url("./Newsletters/ComingSoon.png");
         background-size: cover;
     }
