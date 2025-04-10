@@ -10,7 +10,7 @@
     height: 12rem;
     overflow: hidden;
     z-index: -1;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 
     > img {
         position: absolute;
@@ -29,7 +29,9 @@
         width: 87%;
 
         > :nth-child(2) {
-            border-left: 0.13rem solid black;
+            /* border-left: 0.13rem solid black; */
+            /* margin-top: 5rem; */
+            display: flex;
             padding: 0.75rem;
             height: 10rem;
             font-size: 1.1rem;
@@ -54,9 +56,34 @@
             }
         }
     }
+    /* mine */
+    .contactmail {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: black;
+        text-decoration: none;
+        padding: 0.4rem 0.8rem;
+        border-radius: 5px;
+    }
+    .mailbox {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        padding-bottom: 0.5rem;
+    }
+    .mail-icon {
+        width: 3rem;
+        height: auto;
+        vertical-align: base; /* Or try baseline if needed */
+        margin-right: 0.4rem;
+        position: relative;
+        bottom: 0.2rem; /* Tweak this value up/down to fine-tune vertical position */
+    }
+
+    /* mine */
 
     > :last-child {
-        width: 75%;
+        width: 85%;
         border-top: 0.13rem solid black;
         text-align: center;
         margin-top: 1rem;
