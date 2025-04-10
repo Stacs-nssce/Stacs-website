@@ -13,7 +13,6 @@ import Commitee from "./pages/Commitee/Commitee";
 import AwardDetails from "./pages/AwardDetails/AwardDetails";
 import ActivityDetails from "./pages/ActivityDetails/ActivityDetails";
 import BlogDetails from "./pages/BlogDetails/BlogDetails";
-import Loading from "./components/Loading/Loading";
 import NewsletterPage from "./pages/Newsletter/NewsletterPage";
 
 function App() {

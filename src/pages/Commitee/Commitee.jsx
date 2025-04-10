@@ -1,15 +1,14 @@
 import React from "react";
 import "./Commitee.css";
 import Riya from "./assets/RiyaS.jpg";
-import Achuth from "./assets/Achuth R Kumar.jpg";
-import Sreejith from "./assets/Sreejith M Varma.jpg";
-import Karthik from "./assets/Karthik Krishna S.jpg";
-import Ashish from "./assets/Ashish B.jpg";
+import Keerthana from "./assets/Keerthana.jpeg";
+import Advay from "./assets/advay.jpeg";
+import Abhijith from "./assets/abhijith.jpeg";
+import Nandana from "./assets/nandana.jpeg";
 import DrSruthy from "./assets/Dr.Sruthy Manmadhan.jpg";
 import { FaLinkedin } from "react-icons/fa";
 
 export default function Committee() {
-    // Sample data representing team members
     const teamMembers = [
         {
             id: 1,
@@ -22,51 +21,49 @@ export default function Committee() {
         },
         {
             id: 2,
-            name: "Achuth R Kumar",
-            role: "Chariman",
-            image: Achuth,
-            socials: {
-                platform: "link",
-            },
-        },
-        {
-            id: 3,
             name: "Riya S",
-            role: "Secretary",
+            role: "Chariman",
             image: Riya,
             socials: {
                 platform: "link",
             },
         },
         {
+            id: 3,
+            name: "Advay P Kishore",
+            role: "Secretary",
+            image: Advay,
+            socials: {
+                platform: "link",
+            },
+        },
+        {
             id: 4,
-            name: "Sreejith M Varma",
+            name: "Abhijith V S",
             role: "Joint Secretary",
-            image: Sreejith,
+            image: Abhijith,
             socials: {
                 platform: "link",
             },
         },
         {
             id: 5,
-            name: "Karthik Krishna S",
+            name: "Keerthana S",
             role: "Treasurer",
-            image: Karthik,
+            image: Keerthana,
             socials: {
                 platform: "link",
             },
         },
         {
             id: 6,
-            name: "Ashish B",
+            name: "Nandana Krishnadas",
             role: "Join Treasurer",
-            image: Ashish,
+            image: Nandana,
             socials: {
                 platform: "link",
             },
         },
-
-        // Add more team members as needed
     ];
 
     return (

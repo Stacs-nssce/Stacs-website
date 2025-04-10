@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/logo.svg";
 import stacs from "../../assets/STACS.svg";
 import hamburg from "../../assets/menu.png";
 

@@ -26,11 +26,13 @@ export default function Footer() {
                 </div>
                 <div>
                     <div>
-                        <a href="mailto:stacs@nssce.ac.in">MAIL US</a>
+                        <a class="contactmail" href="mailto:stacs@nssce.ac.in">
+                            MAIL US
+                        </a>
                     </div>
                 </div>
             </div>
-            <div>STACS NSSCE © 2023</div>
+            <div>STACS NSSCE © 2025</div>
         </div>
     );
 }

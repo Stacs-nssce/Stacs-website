@@ -7,8 +7,6 @@ import ReactMarkdown from "react-markdown";
 const ActivityDetails = () => {
     const { activityId } = useParams();
     const [activityContent, setActivityContent] = useState("");
-    const [activityTitle, setActivityTitle] = useState("");
-    const [activityCover, setActivityCover] = useState("");
     console.log(activityId);
 
     useEffect(() => {
@@ -19,8 +17,6 @@ const ActivityDetails = () => {
             .then((response) => {
                 const mdf = fm(response.data);
                 setActivityContent(mdf.body);
-                setActivityTitle(mdf.attributes.title);
-                setActivityCover(mdf.attributes.cover);
             })
             .catch((error) => {
                 console.error("Error fetching award content:", error);
