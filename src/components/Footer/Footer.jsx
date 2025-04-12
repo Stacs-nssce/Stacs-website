@@ -14,18 +14,30 @@ export default function Footer() {
                 <div className="images">
                     <img src={img8} alt="img-8" />
                     <div className="links">
-                        <a href="linkedin.com">
+                        <a
+                            href="https://linkedin.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <img src={lnkdin} alt="linkedin-icon" />
                         </a>
-                        <a href="instagram.com">
+                        <a
+                            href="https://instagram.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <img src={insta} alt="insta-icon" />
                         </a>
-                        <a href="youtube.com/">
+                        <a
+                            href="https://youtube.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <img src={yt} alt="YT-icon" />
                         </a>
                     </div>
                 </div>
-                <div>
+                <div className="mail-container">
                     <div className="mailbox">
                         <img
                             src={mailIcon}
@@ -41,7 +53,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div>STACS NSSCE © 2025</div>
+            <div className="copyright">STACS NSSCE © 2025</div>
         </div>
     );
 }

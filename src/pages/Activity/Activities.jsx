@@ -15,7 +15,7 @@ const ActivitiesPage = () => {
         setIsLoading(true);
         try {
             const response = await axios.get(
-                "https://api.github.com/repos/stacsnssce/webdata/contents/activities"
+                "https://api.github.com/repos/Stacs-nssce/webdata/contents/activities"
             );
             const data = response.data;
             const activitiesData = await Promise.all(
