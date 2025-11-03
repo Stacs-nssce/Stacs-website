@@ -63,35 +63,39 @@
 
     a:nth-last-child(1) {
         background-image: url("./Newsletters/ComingSoon.png");
-        background-size: cover;
+        background-size: contain;
     }
     a:nth-child(1) {
-        background-image: url("./Newsletters/202324.jpg");
+        background-image: url("./Newsletters/202425.jpg");
         background-size: cover;
     }
     a:nth-child(2) {
-        background-image: url("./Newsletters/202223.jpg");
+        background-image: url("./Newsletters/202324.jpg");
         background-size: contain;
     }
     a:nth-child(3) {
-        background-image: url("./Newsletters/202122.png");
+        background-image: url("./Newsletters/202223.jpg");
         background-size: cover;
     }
     a:nth-child(4) {
+        background-image: url("./Newsletters/202122.png");
+        background-size: contain;
+    }
+    a:nth-child(5) {
         background-image: url("./Newsletters/202021.png");
         background-size: cover;
     }
-    a:nth-child(5) {
-        background-image: url("./Newsletters/201920.png");
-        background-size: cover;
-    }
     a:nth-child(6) {
+        background-image: url("./Newsletters/201920.png");
+        background-size: contain;
+    }
+    a:nth-child(7) {
         background-image: url("./Newsletters/201819.png");
         background-size: cover;
     }
-    a:nth-child(7) {
+    a:nth-child(8) {
         background-image: url("./Newsletters/201718.png");
-        background-size: cover;
+        background-size: contain;
     }
 }
 

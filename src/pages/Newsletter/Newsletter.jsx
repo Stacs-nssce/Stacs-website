@@ -8,6 +8,7 @@ export default function Newsletter() {
                 <span>NEWSLETTER</span>
             </div>
             <div className="content">
+                <Link to="/Newsletter/202425.md"></Link>
                 <Link to="/Newsletter/202324.md"></Link>
                 <Link to="/Newsletter/202223.md"></Link>
                 <Link to="/Newsletter/202122.md"></Link>
