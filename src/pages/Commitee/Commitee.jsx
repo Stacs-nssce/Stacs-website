@@ -1,11 +1,11 @@
 import React from "react";
 import "./Commitee.css";
-import Riya from "./assets/RiyaS.jpg";
-import Keerthana from "./assets/Keerthana.jpeg";
-import Advay from "./assets/advay.jpeg";
-import Abhijith from "./assets/abhijith.jpeg";
-import Nandana from "./assets/nandana.jpeg";
-import DrSruthy from "./assets/Dr.Sruthy Manmadhan.jpg";
+import DrSruthy from "./assets/DrSruthy.jpg";
+import Harikrishnan from "./assets/Harikrishnan.jpg";
+import Sandra from "./assets/Sandra.jpg";
+import Ayush from "./assets/Ayush.jpg";
+import Abijith from "./assets/Abijith.jpg";
+import Nidhin from "./assets/Nidhin.jpg";
 import { FaLinkedin } from "react-icons/fa";
 
 export default function Committee() {
@@ -16,52 +16,52 @@ export default function Committee() {
             role: "Faculty In-Charge",
             image: DrSruthy,
             socials: {
-                platform: "link",
+                platform: "https://www.linkedin.com/in/dr-sruthy-manmadhan-385122254/",
             },
         },
         {
             id: 2,
-            name: "Riya S",
-            role: "Chariman",
-            image: Riya,
+            name: "Harikrishnan A",
+            role: "Chariperson",
+            image: Harikrishnan,
             socials: {
-                platform: "link",
+                platform: "https://www.linkedin.com/in/harikrishnan-a-hk224/",
             },
         },
         {
             id: 3,
-            name: "Advay P Kishore",
+            name: "Sandra Suresh Panicker",
             role: "Secretary",
-            image: Advay,
+            image: Sandra,
             socials: {
-                platform: "link",
+                platform: "https://www.linkedin.com/in/sandra-suresh-585592300/",
             },
         },
         {
             id: 4,
-            name: "Abhijith V S",
+            name: "Ayush R Kumar",
             role: "Joint Secretary",
-            image: Abhijith,
+            image: Ayush,
             socials: {
-                platform: "link",
+                platform: "https://www.linkedin.com/in/ayush-r-kumar-055478329/",
             },
         },
         {
             id: 5,
-            name: "Keerthana S",
+            name: "Abijith V S",
             role: "Treasurer",
-            image: Keerthana,
+            image: Abijith,
             socials: {
-                platform: "link",
+                platform: "https://www.linkedin.com/in/abijith-v-s/",
             },
         },
         {
             id: 6,
-            name: "Nandana Krishnadas",
+            name: "Nidhin Shan",
             role: "Join Treasurer",
-            image: Nandana,
+            image: Nidhin,
             socials: {
-                platform: "link",
+                platform: "https://www.linkedin.com/in/nidhin-shan-0102a7322/",
             },
         },
     ];
