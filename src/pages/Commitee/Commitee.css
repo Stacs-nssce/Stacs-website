@@ -32,7 +32,7 @@
         height: 41rem;
 
         .row2 {
-            padding-top: 5rem;
+            padding-top: 2rem;
             width: 100%;
             cursor: pointer;
             border-radius: 1rem;
@@ -40,12 +40,13 @@
             border-bottom: solid 0.4rem orange;
             height: 24rem;
             text-align: center;
+            padding-bottom: 1rem;
 
             .image {
                 text-align: center;
 
                 img {
-                    height: 12rem;
+                    height: 14rem;
                 }
             }
 

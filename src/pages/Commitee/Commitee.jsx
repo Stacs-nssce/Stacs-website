@@ -1,11 +1,18 @@
 import React from "react";
 import "./Commitee.css";
-import Riya from "./assets/RiyaS.jpg";
-import Keerthana from "./assets/Keerthana.jpeg";
-import Advay from "./assets/advay.jpeg";
-import Abhijith from "./assets/abhijith.jpeg";
-import Nandana from "./assets/nandana.jpeg";
-import DrSruthy from "./assets/Dr.Sruthy Manmadhan.jpg";
+import DrSruthy from "./assets/DrSruthy.jpg";
+import Harikrishnan from "./assets/Harikrishnan.jpg";
+import Sandra from "./assets/Sandra.jpg";
+import Ayush from "./assets/Ayush.jpg";
+import Abijith from "./assets/Abijith.jpg";
+import Nidhin from "./assets/Nidhin.jpg";
+import Nandana from "./assets/Nandana.jpg";
+import Aiswarya from "./assets/Aiswarya.jpg";
+import Athul from "./assets/Athul.jpg";
+import Devsurya from "./assets/Devsurya.jpg";
+import Jyotsna from "./assets/Jyotsna.jpg";
+import Abhinav from "./assets/Abhinav.jpg";
+
 import { FaLinkedin } from "react-icons/fa";
 
 export default function Committee() {
@@ -16,52 +23,106 @@ export default function Committee() {
             role: "Faculty In-Charge",
             image: DrSruthy,
             socials: {
-                platform: "link",
+                platform: "https://www.linkedin.com/in/dr-sruthy-manmadhan-385122254/",
             },
         },
         {
             id: 2,
-            name: "Riya S",
-            role: "Chariman",
-            image: Riya,
+            name: "Harikrishnan A",
+            role: "Chariperson",
+            image: Harikrishnan,
             socials: {
-                platform: "link",
+                platform: "https://www.linkedin.com/in/harikrishnan-a-hk224/",
             },
         },
         {
             id: 3,
-            name: "Advay P Kishore",
+            name: "Sandra Suresh Panicker",
             role: "Secretary",
-            image: Advay,
+            image: Sandra,
             socials: {
-                platform: "link",
+                platform: "https://www.linkedin.com/in/sandra-suresh-585592300/",
             },
         },
         {
             id: 4,
-            name: "Abhijith V S",
+            name: "Ayush R Kumar",
             role: "Joint Secretary",
-            image: Abhijith,
+            image: Ayush,
             socials: {
-                platform: "link",
+                platform: "https://www.linkedin.com/in/ayush-r-kumar-055478329/",
             },
         },
         {
             id: 5,
-            name: "Keerthana S",
+            name: "Abijith V S",
             role: "Treasurer",
-            image: Keerthana,
+            image: Abijith,
             socials: {
-                platform: "link",
+                platform: "https://www.linkedin.com/in/abijith-v-s/",
             },
         },
         {
             id: 6,
-            name: "Nandana Krishnadas",
+            name: "Nidhin Shan",
             role: "Join Treasurer",
+            image: Nidhin,
+            socials: {
+                platform: "https://www.linkedin.com/in/nidhin-shan-0102a7322/",
+            },
+        },
+                {
+            id: 7,
+            name: "Nandana Krishnadas",
+            role: "Content Head",
             image: Nandana,
             socials: {
-                platform: "link",
+                platform: "https://www.linkedin.com/in/nandana-krishnadas-39a5a5292/",
+            },
+        },
+        {
+            id: 8,
+            name: "Aiswarya S",
+            role: "Media Head",
+            image: Aiswarya,
+            socials: {
+                platform: "https://www.linkedin.com/in/aiswarya-s-3709bb300/",
+            },
+        },
+        {
+            id: 9,
+            name: "Athul S Menon",
+            role: "Tech Head",
+            image: Athul,
+            socials: {
+                platform: "https://www.linkedin.com/in/athul-s-menon-a22857296/",
+            },
+        },
+        {
+            id: 10,
+            name: "Devsurya S",
+            role: "Design Head",
+            image: Devsurya,
+            socials: {
+                platform: "https://www.linkedin.com/in/devsurya-s-992361293/",
+            },
+        },
+        {
+            id: 11,
+            name: "Jyotsna Menon",
+            role: "Codify",
+            image: Jyotsna,
+            socials: {
+                platform: "https://www.linkedin.com/in/jyotsna-menon/",
+            },
+        },
+        {
+            id: 12,
+            name: "Abhinav V R",
+            role: "Codify",
+            image: Abhinav,
+            socials: {
+                platform: "https://www.linkedin.com/in/abhinavvr/",
             },
         },
     ];
